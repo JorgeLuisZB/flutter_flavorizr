@@ -42,7 +42,7 @@ class K {
 
   static String flutterFlavorUtilsPath = '$flutterPath/app/utils/flavor_utils.dart';
 
-  static String flutterFlavorColorThemesPath = '$flutterPath/app/themes/colors_themes.dart';
+  static String flutterFlavorColorThemesPath = '$flutterPath/app/themes/colors_theme.dart';
 
   static String flutterFlavorConstantsPath = '$flutterPath/app/utils/flavor_constants.dart';
 

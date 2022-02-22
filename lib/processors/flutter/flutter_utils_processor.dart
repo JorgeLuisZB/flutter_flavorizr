@@ -71,8 +71,8 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {': 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
       buffer.writeln('      return SvgPicture.asset(');
-      buffer.writeln('        SvgRes.${flavorName.toCamelCase()}Logo,');
-      buffer.writeln('        semanticsLabel: \'${flavorName.toTitleCase()} Logo\',');
+      buffer.writeln('        SvgRes.${flavorName.camelCase}Logo,');
+      buffer.writeln('        semanticsLabel: \'${flavorName.titleCase} Logo\',');
       buffer.writeln('        width: 178.0,');
       buffer.writeln('        height: 126.0,');
       buffer.writeln('      );');
@@ -98,7 +98,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
       String flavorName = config.flavors.keys.elementAt(i);
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
-      buffer.writeln('      return \'${flavorName.toTitleCase()}\';');
+      buffer.writeln('      return \'${flavorName.titleCase}\';');
       buffer.write('    } else ');
     }
 
@@ -116,7 +116,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
       String flavorName = config.flavors.keys.elementAt(i);
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
-      buffer.writeln('      return await getBytesFromAsset(SvgRes.${flavorName.toCamelCase()}GreenPin, 150);');
+      buffer.writeln('      return await getBytesFromAsset(SvgRes.${flavorName.camelCase}GreenPin, 150);');
       buffer.write('    } else ');
     }
 
@@ -135,7 +135,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
       buffer.writeln('      return SvgPicture.asset(');
-      buffer.writeln('        SvgRes.${flavorName.toCamelCase()}HLogo,');
+      buffer.writeln('        SvgRes.${flavorName.camelCase}HLogo,');
       buffer.writeln('        height: 25,');
       buffer.writeln('        width: 236,');
       buffer.writeln('        fit: BoxFit.contain,');
@@ -161,7 +161,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
     config.flavors.keys.forEach((flavorName) {
       buffer.writeln('      case Flavor.${flavorName}:');
-      buffer.writeln('        return [${flavorName.toCamelCase()}AndroidApplicationId, legacy${flavorName.toCamelCase()}IOSBundle];');
+      buffer.writeln('        return [${flavorName.camelCase}AndroidApplicationId, legacy${flavorName.camelCase}IOSBundle];');
     });
 
     buffer.writeln('      default:');

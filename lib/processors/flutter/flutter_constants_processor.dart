@@ -48,9 +48,9 @@ class FlutterFlavorConstantsProcessor extends StringProcessor {
   void _appendFlavorConstants(StringBuffer buffer) {
     buffer.writeln();
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln('const String ${name.toCamelCase()}IOSAppId = \'${flavor.ios.appId}\';');
-      buffer.writeln('const String legacy${name.toCamelCase()}IOSBundle = \'${flavor.ios.bundleId}\';');
-      buffer.writeln('const String ${name.toCamelCase()}AndroidApplicationId = \'${flavor.android.applicationId}\';');
+      buffer.writeln('const String ${name.camelCase}IOSAppId = \'${flavor.ios.appId}\';');
+      buffer.writeln('const String legacy${name.camelCase}IOSBundle = \'${flavor.ios.bundleId}\';');
+      buffer.writeln('const String ${name.camelCase}AndroidApplicationId = \'${flavor.android.applicationId}\';');
       buffer.writeln();
     });
   }

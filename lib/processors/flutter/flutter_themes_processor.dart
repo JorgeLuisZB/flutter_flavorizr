@@ -85,7 +85,7 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
     buffer.writeln('  ThemeData get themeData {');
 
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln('    ColorScheme colorScheme${name.toCamelCase()} = ColorScheme(');
+      buffer.writeln('    ColorScheme colorScheme${name.camelCase} = ColorScheme(');
       buffer.writeln('      primary: ${flavor.app.primary},');
       buffer.writeln('      primaryVariant: Color(0xff239DD1),');
       buffer.writeln('      surface: Color(0xff5EBE4E),');
