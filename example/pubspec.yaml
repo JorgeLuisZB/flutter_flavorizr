@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.15.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -42,24 +42,32 @@ flavorizr:
     ios:
 
   flavors:
-    apple:
+    ikon_connect:
       app:
-        name: "Apple App"
+        name: "Ikon Connect"
+        primary: "Color(0xff5EBE4E)"
+        secondary: "Color(0xffF1F3F4)"
 
       android:
-        applicationId: "com.example.apple"
+        applicationId: "com.example.ikon"
 
       ios:
-        bundleId: "com.example.apple"
+        bundleId: "com.example.ikon"
+        appId: "1512261642"
 
-    banana:
+    nissan_of_denton:
       app:
-        name: "Banana App"
+        name: "Nissan Of Denton Connect"
+        primary: "Color(0xff095A99)"
+        secondary: "Color(0xffF1F3F4)"
 
       android:
-        applicationId: "com.example.banana"
+        applicationId: "com.example.nissanofdenton"
+
       ios:
-        bundleId: "com.example.banana"
+        bundleId: "com.example.nissanofdenton"
+        appId: "1512261643"
+
 
 
 # For information on the generic Dart part of this file, see the

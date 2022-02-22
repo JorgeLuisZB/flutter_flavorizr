@@ -38,13 +38,27 @@ class K {
 
   static String flutterPath = 'lib';
 
-  static String flutterFlavorPath = '$flutterPath/flavors.dart';
+  static String flutterFlavorPath = '$flutterPath/app/utils/flavor_config.dart';
 
-  static String flutterAppPath = '$flutterPath/app.dart';
+  static String flutterFlavorUtilsPath = '$flutterPath/app/utils/flavor_utils.dart';
 
-  static String flutterPagesPath = '$flutterPath/pages';
+  static String flutterFlavorColorThemesPath = '$flutterPath/app/themes/colors_themes.dart';
 
-  static String flutterMainPagePath = '$flutterPagesPath/my_home_page.dart';
+  static String flutterFlavorConstantsPath = '$flutterPath/app/utils/flavor_constants.dart';
+
+  static String flutterAppPath = '$flutterPath/main.dart';
+
+  static String flutterMainFlavorPath = '$flutterPath/flavors';
+
+  static String flutterMainPath = '$flutterPath/flavors';
+
+  static String flutterUtilsPath = '$flutterPath/app/utils';
+
+  static String flutterThemesPath = '$flutterPath/app/themes';
+
+  // static String flutterPagesPath = '$flutterPath/pages';
+
+  // static String flutterMainPagePath = '$flutterPagesPath/home_page.dart';
 
   static String iOSPath = 'ios';
 
@@ -71,11 +85,17 @@ class K {
 
   static String tempFlutterPath = '$tempPath/flutter';
 
-  static String tempFlutterAppPath = '$tempFlutterPath/app.dart';
+  static String tempFlutterAppPath = '$tempFlutterPath/main.dart';
+
+  static String tempFlutterMainFlavorPath = '$tempFlutterPath/flavors';
 
   static String tempFlutterMainPath = '$tempFlutterPath/main-target.dart';
 
-  static String tempFlutterPagesPath = '$tempFlutterPath/pages';
+  static String tempFlutterUtilsPath = '$tempFlutterPath/app/utils';
+
+  static String tempFlutterThemePath = '$tempFlutterPath/app/themes';
+
+  // static String tempFlutterPagesPath = '$tempFlutterPath/pages';
 
   static String tempiOSPath = '$tempPath/ios';
 

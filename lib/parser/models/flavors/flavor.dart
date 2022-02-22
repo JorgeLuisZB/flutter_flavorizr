@@ -26,7 +26,7 @@
 import 'package:json_annotation/json_annotation.dart';
 
 import 'android.dart';
-import 'app.dart';
+import 'main.dart';
 import 'ios.dart';
 
 part 'flavor.g.dart';

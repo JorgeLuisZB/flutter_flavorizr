@@ -40,6 +40,8 @@ import 'package:flutter_flavorizr/processors/commons/new_file_string_processor.d
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/unzip_file_processor.dart';
 import 'package:flutter_flavorizr/processors/flutter/flutter_flavors_processor.dart';
+import 'package:flutter_flavorizr/processors/flutter/flutter_themes_processor.dart';
+import 'package:flutter_flavorizr/processors/flutter/flutter_utils_processor.dart';
 import 'package:flutter_flavorizr/processors/flutter/target/flutter_targets_file_processor.dart';
 import 'package:flutter_flavorizr/processors/google/firebase/firebase_processor.dart';
 import 'package:flutter_flavorizr/processors/ide/ide_processor.dart';
@@ -51,6 +53,8 @@ import 'package:flutter_flavorizr/processors/ios/ios_schemas_processor.dart';
 import 'package:flutter_flavorizr/processors/ios/launch_screen/ios_targets_launchscreen_file_processor.dart';
 import 'package:flutter_flavorizr/processors/ios/xcconfig/ios_xcconfig_targets_file_processor.dart';
 import 'package:flutter_flavorizr/utils/constants.dart';
+
+import 'flutter/flutter_constants_processor.dart';
 
 class Processor extends AbstractProcessor<void> {
   final Map<String, AbstractProcessor<void>> _availableProcessors;
@@ -68,9 +72,15 @@ class Processor extends AbstractProcessor<void> {
     'android:icons',
 
     // Flutter
-    'flutter:flavors',
+    'flutter:utils',
+    'flutter:flavorsConfig',
+    'flutter:flavorsUtils',
+    'flutter:flavorsConstants',
+    'flutter:themes',
+    'flutter:colorsThemes',
     'flutter:app',
-    'flutter:pages',
+    // 'flutter:pages',
+    'flutter:mainFlavors',
     'flutter:targets',
 
     // iOS
@@ -165,24 +175,59 @@ class Processor extends AbstractProcessor<void> {
       ),
 
       //Flutter
-      'flutter:flavors': NewFileStringProcessor(
+      'flutter:utils': CopyFolderProcessor(
+        K.tempFlutterUtilsPath,
+        K.flutterUtilsPath,
+        config: pubspec.flavorizr,
+      ),
+      'flutter:flavorsConfig': NewFileStringProcessor(
         K.flutterFlavorPath,
         FlutterFlavorsProcessor(config: pubspec.flavorizr),
         config: pubspec.flavorizr,
       ),
+
+      'flutter:flavorsUtils': NewFileStringProcessor(
+        K.flutterFlavorUtilsPath,
+        FlutterFlavorUtilsProcessor(config: pubspec.flavorizr),
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:flavorsConstants': NewFileStringProcessor(
+        K.flutterFlavorConstantsPath,
+        FlutterFlavorConstantsProcessor(config: pubspec.flavorizr),
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:themes': CopyFolderProcessor(
+        K.tempFlutterThemePath,
+        K.flutterThemesPath,
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:colorsThemes': NewFileStringProcessor(
+        K.flutterFlavorColorThemesPath,
+        FlutterFlavorThemeProcessor(config: pubspec.flavorizr),
+        config: pubspec.flavorizr,
+      ),
+
       'flutter:app': CopyFileProcessor(
         K.tempFlutterAppPath,
         K.flutterAppPath,
         config: pubspec.flavorizr,
       ),
-      'flutter:pages': CopyFolderProcessor(
-        K.tempFlutterPagesPath,
-        K.flutterPagesPath,
+      // 'flutter:pages': CopyFolderProcessor(
+      //   K.tempFlutterPagesPath,
+      //   K.flutterPagesPath,
+      //   config: pubspec.flavorizr,
+      // ),
+      'flutter:mainFlavors': CopyFolderProcessor(
+        K.tempFlutterMainFlavorPath,
+        K.flutterMainFlavorPath,
         config: pubspec.flavorizr,
       ),
       'flutter:targets': FlutterTargetsFileProcessor(
         K.tempFlutterMainPath,
-        K.flutterPath,
+        K.flutterMainPath,
         config: pubspec.flavorizr,
       ),
 

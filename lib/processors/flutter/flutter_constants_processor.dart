@@ -24,37 +24,38 @@
  */
 
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
-import 'package:flutter_flavorizr/processors/commons/copy_file_processor.dart';
-import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
-import 'package:flutter_flavorizr/processors/commons/replace_string_processor.dart';
-import 'package:flutter_flavorizr/processors/commons/runtime_file_string_processor.dart';
+import 'package:flutter_flavorizr/processors/commons/string_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
-class FlutterTargetFileProcessor extends QueueProcessor {
-  FlutterTargetFileProcessor(
-    String source,
-    String destination,
-    String flavorName, {
+class FlutterFlavorConstantsProcessor extends StringProcessor {
+  FlutterFlavorConstantsProcessor({
+    String? input,
     required Flavorizr config,
   }) : super(
-          [
-            CopyFileProcessor(
-              source,
-              '$destination/main_$flavorName.dart',
-              config: config,
-            ),
-            RuntimeFileStringProcessor(
-              '$destination/main_$flavorName.dart',
-              ReplaceStringProcessor(
-                '[[FLAVOR_NAME]]',
-                flavorName,
-                config: config,
-              ),
-              config: config,
-            ),
-          ],
-          config: config,
-        );
+    input: input,
+    config: config,
+  );
 
   @override
-  String toString() => 'FlutterTargetFileProcessor';
+  String execute() {
+    StringBuffer buffer = StringBuffer();
+
+    _appendFlavorConstants(buffer);
+
+    return buffer.toString();
+  }
+
+  void _appendFlavorConstants(StringBuffer buffer) {
+    buffer.writeln();
+    this.config.flavors.forEach((name, flavor) {
+      buffer.writeln('const String ${name.toCamelCase()}IOSAppId = \'${flavor.ios.appId}\';');
+      buffer.writeln('const String legacy${name.toCamelCase()}IOSBundle = \'${flavor.ios.bundleId}\';');
+      buffer.writeln('const String ${name.toCamelCase()}AndroidApplicationId = \'${flavor.android.applicationId}\';');
+      buffer.writeln();
+    });
+  }
+
+
+  @override
+  String toString() => 'FlutterFlavorConstantsProcessor';
 }

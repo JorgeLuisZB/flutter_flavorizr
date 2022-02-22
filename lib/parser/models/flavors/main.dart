@@ -23,42 +23,30 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import 'package:flutter_flavorizr/parser/mixins/build_settings_mixin.dart';
-import 'package:flutter_flavorizr/parser/models/flavors/commons/os.dart';
-import 'package:flutter_flavorizr/parser/models/flavors/google/firebase/firebase.dart';
-import 'package:flutter_flavorizr/parser/models/flavors/ios/variable.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'ios.g.dart';
+part 'main.g.dart';
 
 @JsonSerializable(anyMap: true, createToJson: false)
-class IOS extends OS with BuildSettingsMixin {
+class App {
   @JsonKey(required: true, disallowNullValue: true)
-  final String bundleId;
+  final String name;
+
   @JsonKey(required: true, disallowNullValue: true)
-  final String appId;
+  final String primary;
 
-  @JsonKey(disallowNullValue: true, defaultValue: {})
-  final Map<String, Variable> variables;
+  @JsonKey(required: true, disallowNullValue: true)
+  final String secondary;
 
-  IOS({
-    required this.bundleId,
-    required this.appId,
-    this.variables = const {},
-    Map<String, dynamic> buildSettings = const {},
-    bool generateDummyAssets = true,
-    Firebase? firebase,
-    String? icon,
-  }) : super(
-          generateDummyAssets: generateDummyAssets,
-          firebase: firebase,
-          icon: icon,
-        ) {
-    this.buildSettings = {
-      "PRODUCT_BUNDLE_IDENTIFIER": bundleId,
-    };
-    this.buildSettings.addAll(buildSettings);
-  }
+  @JsonKey(disallowNullValue: true)
+  final String? icon;
 
-  factory IOS.fromJson(Map<String, dynamic> json) => _$IOSFromJson(json);
+  App({
+    required this.name,
+    this.icon,
+    required this.primary,
+    required this.secondary,
+  });
+
+  factory App.fromJson(Map<String, dynamic> json) => _$AppFromJson(json);
 }

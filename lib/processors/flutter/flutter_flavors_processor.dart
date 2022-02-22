@@ -24,8 +24,8 @@
  */
 
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
-import 'package:flutter_flavorizr/parser/models/flavors/flavor.dart';
 import 'package:flutter_flavorizr/processors/commons/string_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class FlutterFlavorsProcessor extends StringProcessor {
   FlutterFlavorsProcessor({
@@ -41,45 +41,80 @@ class FlutterFlavorsProcessor extends StringProcessor {
     StringBuffer buffer = StringBuffer();
 
     _appendFlavorEnum(buffer);
+    _appendFlavorValues(buffer);
     _appendFlavorClass(buffer);
 
     return buffer.toString();
   }
 
   void _appendFlavorEnum(StringBuffer buffer) {
+    buffer.writeln('import \'package:flutter/material.dart\';');
+    buffer.writeln('import \'package:connect/app/utils/string_utils.dart\';');
+    buffer.writeln();
     buffer.writeln('enum Flavor {');
 
     config.flavors.keys.forEach((String flavorName) {
-      buffer.writeln('  ${flavorName.toUpperCase()},');
+      buffer.writeln('  ${flavorName},');
     });
 
     buffer.writeln('}');
+    buffer.writeln();
+  }
+
+  void _appendFlavorValues(StringBuffer buffer) {
+    buffer.writeln('class FlavorValues {');
+    buffer.writeln('  FlavorValues({@required this.baseUrl});');
+    buffer.writeln();
+    buffer.writeln('  final String baseUrl;');
+    buffer.writeln('}');
+    buffer.writeln();
   }
 
   void _appendFlavorClass(StringBuffer buffer) {
+    buffer.writeln('class FlavorConfig {');
+    buffer.writeln('  final Flavor flavor;');
+    buffer.writeln('  final FlavorValues values;');
+    buffer.writeln('  final String name;');
+    buffer.writeln('  final Color color;');
+    buffer.writeln('  final bool hasDealer;');
     buffer.writeln();
-    buffer.writeln('class F {');
-    buffer.writeln('  static Flavor? appFlavor;');
+    buffer.writeln('  static FlavorConfig _instance;');
     buffer.writeln();
-
-    buffer.writeln('  static String get name => appFlavor?.name ?? \'\';');
-    buffer.writeln();
-
-    buffer.writeln('  static String get title {');
-    buffer.writeln('    switch (appFlavor) {');
-
-    config.flavors.forEach((String name, Flavor flavor) {
-      buffer.writeln('      case Flavor.${name.toUpperCase()}:');
-      buffer.writeln('        return \'${flavor.app.name}\';');
-    });
-
-    buffer.writeln('      default:');
-    buffer.writeln('        return \'title\';');
-    buffer.writeln('    }');
+    buffer.writeln('  factory FlavorConfig({');
+    buffer.writeln('    @required Flavor flavor,');
+    buffer.writeln('    Color color: Colors.blue,');
+    buffer.writeln('    @required FlavorValues values,');
+    buffer.writeln('    @required bool hasDealer,');
+    buffer.writeln('   }) {');
+    buffer.writeln('    _instance ??= FlavorConfig._internal(');
+    buffer.writeln('      flavor,');
+    buffer.writeln('      StringUtils.enumName(flavor.toString()),');
+    buffer.writeln('      color,');
+    buffer.writeln('      values,');
+    buffer.writeln('      hasDealer,');
+    buffer.writeln('   );');
+    buffer.writeln('   return _instance;');
     buffer.writeln('  }');
-
     buffer.writeln();
+
+    buffer.writeln('  FlavorConfig._internal(');
+    buffer.writeln('    this.flavor,');
+    buffer.writeln('    this.name,');
+    buffer.writeln('    this.color,');
+    buffer.writeln('    this.values,');
+    buffer.writeln('    this.hasDealer,');
+    buffer.writeln('  );');
+    buffer.writeln();
+
+    buffer.writeln('  static FlavorConfig get instance => _instance;');
+    buffer.writeln();
+
+    config.flavors.keys.forEach((String flavorName) {
+      buffer.writeln('  static bool is${flavorName.toCamelCase()}() => _instance.flavor == Flavor.${flavorName};');
+      buffer.writeln();
+    });
     buffer.writeln('}');
+    buffer.writeln();
   }
 
   @override
