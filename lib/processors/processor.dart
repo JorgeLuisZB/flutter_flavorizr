@@ -86,13 +86,13 @@ class Processor extends AbstractProcessor<void> {
     'flutter:targets',
 
     // iOS
-    'ios:xcconfig',
+    //'ios:xcconfig',
     'ios:buildTargets',
     'ios:schema',
     'ios:dummyAssets',
     'ios:icons',
     'ios:plist',
-    'ios:launchScreen',
+    //'ios:launchScreen',
 
     // Google
     'google:firebase',
