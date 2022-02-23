@@ -31,6 +31,7 @@ import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/shell_processor.dart';
 import 'package:flutter_flavorizr/processors/ios/xcconfig/ios_xcconfig_processor.dart';
 import 'package:flutter_flavorizr/utils/ios_utils.dart' as IOSUtils;
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSXCConfigModeFileProcessor extends QueueProcessor {
   IOSXCConfigModeFileProcessor(
@@ -45,7 +46,7 @@ class IOSXCConfigModeFileProcessor extends QueueProcessor {
   }) : super(
           [
             NewFileStringProcessor(
-              '$path/$flavorName${target.name}.xcconfig',
+              '$path/$flavorName${target.name.pascalCase}.xcconfig',
               IOSXCConfigProcessor(
                 flavorName,
                 flavor,
@@ -59,7 +60,7 @@ class IOSXCConfigModeFileProcessor extends QueueProcessor {
               [
                 script,
                 project,
-                IOSUtils.flatPath('$path/$flavorName${target.name}.xcconfig'),
+                IOSUtils.flatPath('$path/$flavorName${target.name.pascalCase}.xcconfig'),
                 'Flutter',
               ],
               config: config,
