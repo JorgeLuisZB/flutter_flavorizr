@@ -47,7 +47,7 @@ class FlutterAppIdProcessor extends StringProcessor {
   }
 
   void _appendImports(StringBuffer buffer) {
-    buffer.writeln('import \'package:connect/app/utils/constants.dart\';');
+    buffer.writeln('import \'package:connect/app/utils/flavor_constants.dart\';');
     buffer.writeln('import \'package:connect/app/utils/flavor_config.dart\';');
     buffer.writeln();
   }
