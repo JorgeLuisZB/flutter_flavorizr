@@ -43,6 +43,7 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
     _appendImports(buffer);
     _appendBaseTheme(buffer);
     _appendThemeData(buffer);
+    _appendInstanceTheme(buffer);
 
     return buffer.toString();
   }
@@ -85,7 +86,7 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
     buffer.writeln('  ThemeData get themeData {');
 
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln('    ColorScheme colorScheme${name.camelCase} = ColorScheme(');
+      buffer.writeln('    ColorScheme colorScheme${name.pascalCase} = ColorScheme(');
       buffer.writeln('      primary: ${flavor.app.primary},');
       buffer.writeln('      primaryVariant: Color(0xff239DD1),');
       buffer.writeln('      surface: Color(0xff5EBE4E),');
@@ -102,8 +103,22 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
       buffer.writeln('    );');
       buffer.writeln();
     });
+  }
 
-    buffer.writeln('');
+  void _appendInstanceTheme(StringBuffer buffer) {
+    for (int i = 0; i < this.config.flavors.keys.length; i++) {
+      String flavorName = this.config.flavors.keys.elementAt(i);
+
+      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
+      buffer.writeln('      return ThemeData.from(colorScheme: colorScheme${flavorName.pascalCase});');
+      buffer.write('    } else ');
+    };
+
+    buffer.writeln('{');
+    buffer.writeln('      return ThemeData.from(colorScheme: colorSchemeIkon);');
+    buffer.writeln('    }');
+    buffer.writeln('  }');
+    buffer.writeln('}');
   }
 
   @override

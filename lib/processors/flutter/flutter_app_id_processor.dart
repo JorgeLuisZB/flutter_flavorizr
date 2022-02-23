@@ -27,8 +27,8 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/string_processor.dart';
 import 'package:flutter_flavorizr/utils/string_casing.dart';
 
-class FlutterFlavorConstantsProcessor extends StringProcessor {
-  FlutterFlavorConstantsProcessor({
+class FlutterAppIdProcessor extends StringProcessor {
+  FlutterAppIdProcessor({
     String? input,
     required Flavorizr config,
   }) : super(
@@ -40,22 +40,41 @@ class FlutterFlavorConstantsProcessor extends StringProcessor {
   String execute() {
     StringBuffer buffer = StringBuffer();
 
-    _appendFlavorConstants(buffer);
+    _appendImports(buffer);
+    _appendFlavorAppId(buffer);
 
     return buffer.toString();
   }
 
-  void _appendFlavorConstants(StringBuffer buffer) {
+  void _appendImports(StringBuffer buffer) {
+    buffer.writeln('import \'package:connect/app/utils/constants.dart\';');
+    buffer.writeln('import \'package:connect/app/utils/flavor_config.dart\';');
     buffer.writeln();
+  }
+
+  void _appendFlavorAppId(StringBuffer buffer) {
+    buffer.writeln('class FlavorAppId {');
+    buffer.writeln('  String androidApplicationId;');
+    buffer.writeln('  String iOSAppId;');
+    buffer.writeln();
+    buffer.writeln('  FlavorAppId({this.androidApplicationId, this.iOSAppId});');
+    buffer.writeln();
+    buffer.writeln('  checkFlavor({Flavor flavor}) {');
+    buffer.writeln('    switch (flavor) {');
+
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln('const String ${name.camelCase}IOSAppId = \'${flavor.ios.appId}\';');
-      buffer.writeln('const String ${name.camelCase}IOSBundle = \'${flavor.ios.bundleId}\';');
-      buffer.writeln('const String ${name.camelCase}AndroidApplicationId = \'${flavor.android.applicationId}\';');
-      buffer.writeln();
+      buffer.writeln('      case Flavor.${name}:');
+      buffer.writeln('        this.androidApplicationId = ${name.camelCase}AndroidApplicationId;');
+      buffer.writeln('        this.iOSAppId = ${name.camelCase}IOSAppId;');
+      buffer.writeln('        break;');
     });
+
+    buffer.writeln('    }');
+    buffer.writeln('  }');
+    buffer.writeln('}');
   }
 
 
   @override
-  String toString() => 'FlutterFlavorConstantsProcessor';
+  String toString() => 'FlutterAppIdProcessor';
 }

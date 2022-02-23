@@ -46,6 +46,8 @@ class K {
 
   static String flutterFlavorConstantsPath = '$flutterPath/app/utils/flavor_constants.dart';
 
+  static String flutterFlavorAppIdPath = '$flutterPath/app/utils/flavor_app_id.dart';
+
   static String flutterAppPath = '$flutterPath/main.dart';
 
   static String flutterMainFlavorPath = '$flutterPath/flavors';

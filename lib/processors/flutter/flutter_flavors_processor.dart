@@ -110,7 +110,7 @@ class FlutterFlavorsProcessor extends StringProcessor {
     buffer.writeln();
 
     config.flavors.keys.forEach((String flavorName) {
-      buffer.writeln('  static bool ${flavorName.camelCase}() => _instance.flavor == Flavor.${flavorName};');
+      buffer.writeln('  static bool is${flavorName.pascalCase}() => _instance.flavor == Flavor.${flavorName};');
       buffer.writeln();
     });
     buffer.writeln('}');

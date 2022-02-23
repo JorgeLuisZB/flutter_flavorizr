@@ -53,7 +53,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
   void _appendImports(StringBuffer buffer) {
     buffer.writeln('import \'dart:typed_data\';');
     buffer.writeln();
-    buffer.writeln('import \'package:connect/app/utils/constants.dart\';');
+    buffer.writeln('import \'package:connect/app/utils/flavor_constants.dart\';');
     buffer.writeln('import \'package:connect/app/utils/flavor_config.dart\';');
     buffer.writeln('import \'package:connect/app/utils/image_assets.dart\';');
     buffer.writeln('import \'package:connect/app/utils/image_utils.dart\';');
@@ -116,7 +116,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
       String flavorName = config.flavors.keys.elementAt(i);
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
-      buffer.writeln('      return await getBytesFromAsset(SvgRes.${flavorName.camelCase}GreenPin, 150);');
+      buffer.writeln('      return await getBytesFromAsset(SvgRes.${flavorName.camelCase}Pin, 150);');
       buffer.write('    } else ');
     }
 
@@ -161,11 +161,11 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
     config.flavors.keys.forEach((flavorName) {
       buffer.writeln('      case Flavor.${flavorName}:');
-      buffer.writeln('        return [${flavorName.camelCase}AndroidApplicationId, legacy${flavorName.camelCase}IOSBundle];');
+      buffer.writeln('        return [${flavorName.camelCase}AndroidApplicationId, ${flavorName.camelCase}IOSBundle];');
     });
 
     buffer.writeln('      default:');
-    buffer.writeln('        return [ikonAndroidApplicationId, legacyIkonIOSBundle];');
+    buffer.writeln('        return [ikonAndroidApplicationId, ikonIOSBundle];');
     buffer.writeln('    }');
     buffer.writeln('  }');
     buffer.writeln('}');

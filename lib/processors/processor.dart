@@ -54,6 +54,7 @@ import 'package:flutter_flavorizr/processors/ios/launch_screen/ios_targets_launc
 import 'package:flutter_flavorizr/processors/ios/xcconfig/ios_xcconfig_targets_file_processor.dart';
 import 'package:flutter_flavorizr/utils/constants.dart';
 
+import 'flutter/flutter_app_id_processor.dart';
 import 'flutter/flutter_constants_processor.dart';
 
 class Processor extends AbstractProcessor<void> {
@@ -66,7 +67,7 @@ class Processor extends AbstractProcessor<void> {
     'assets:extract',
 
     // Android
-    'android:androidManifest',
+    //'android:androidManifest',
     'android:buildGradle',
     'android:dummyAssets',
     'android:icons',
@@ -76,6 +77,7 @@ class Processor extends AbstractProcessor<void> {
     'flutter:flavorsConfig',
     'flutter:flavorsUtils',
     'flutter:flavorsConstants',
+    'flutter:flavorsAppId',
     'flutter:themes',
     'flutter:colorsThemes',
     'flutter:app',
@@ -195,6 +197,12 @@ class Processor extends AbstractProcessor<void> {
       'flutter:flavorsConstants': NewFileStringProcessor(
         K.flutterFlavorConstantsPath,
         FlutterFlavorConstantsProcessor(config: pubspec.flavorizr),
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:flavorsAppId': NewFileStringProcessor(
+        K.flutterFlavorAppIdPath,
+        FlutterAppIdProcessor(config: pubspec.flavorizr),
         config: pubspec.flavorizr,
       ),
 
