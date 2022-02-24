@@ -38,7 +38,7 @@ class IOSIconsProcessor extends QueueProcessor {
                   flavor.app.icon != null || flavor.ios.icon != null)
               .map(
                 (flavorName, flavor) => MapEntry(
-                  flavorName.pascalCase,
+                  flavorName,
                   IOSIconTargetProcessor(
                     flavor.ios.icon ?? flavor.app.icon ?? '',
                     flavorName.pascalCase,

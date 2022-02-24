@@ -38,11 +38,11 @@ class IOSDummyAssetsTargetsProcessor extends QueueProcessor {
           config.flavors
               .map(
                 (String flavorName, Flavor flavor) => MapEntry(
-                  flavorName.pascalCase,
+                  flavorName,
                   IOSDummyAssetsProcessor(
                     source,
                     destination,
-                    flavorName.pascalCase,
+                    flavorName,
                     flavor.ios,
                     config: config,
                   ),

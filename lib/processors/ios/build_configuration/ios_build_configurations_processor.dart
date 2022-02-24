@@ -49,7 +49,7 @@ class IOSBuildConfigurationsProcessor extends QueueProcessor {
               [
                 script,
                 project,
-                IOSUtils.flatPath('$file/$flavorName${target.name.pascalCase}.xcconfig'),
+                IOSUtils.flatPath('$file/${flavorName.pascalCase}${target.name.pascalCase}.xcconfig'),
                 flavorName.pascalCase,
                 bundleId,
                 target.name.pascalCase,
