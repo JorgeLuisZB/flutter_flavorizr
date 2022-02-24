@@ -35,39 +35,41 @@ dev_dependencies:
   flutter_flavorizr:
     path: ../
 
+
 flavorizr:
   app:
     android:
-      flavorDimensions: "flavor-type"
+      flavorDimensions: "app"
     ios:
 
   flavors:
-    ikon_connect:
+    ikon:
       app:
-        name: "Ikon Connect"
-        primary: "Color(0xff5EBE4E)"
-        secondary: "Color(0xffF1F3F4)"
+        name: "Ikon"
+        theme:
+          primary: "Color(0xff5EBE4E)"
+          secondary: "Color(0xffF1F3F4)"
 
       android:
-        applicationId: "com.example.ikon"
+        applicationId: "com.ikontechnologies.ikonconnect"
 
       ios:
-        bundleId: "com.example.ikon"
-        appId: "1512261642"
+        bundleId: "com.skypatrol.consumer"
+        appId: "1078370039"
 
-    nissan_of_denton:
+    grand_auto:
       app:
-        name: "Nissan Of Denton Connect"
-        primary: "Color(0xff095A99)"
-        secondary: "Color(0xffF1F3F4)"
+        name: "Grand Auto Connect"
+        theme:
+          primary: "Color(0xff095A99)"
+          secondary: "Color(0xffF1F3F4)"
 
       android:
-        applicationId: "com.example.nissanofdenton"
+        applicationId: "com.ikontechnologies.grandauto.connect"
 
       ios:
-        bundleId: "com.example.nissanofdenton"
-        appId: "1512261643"
-
+        bundleId: "com.ikontechnologies.grandauto.connect"
+        appId: "1584707262"
 
 
 # For information on the generic Dart part of this file, see the

@@ -23,28 +23,68 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import 'package:flutter_flavorizr/parser/models/flavors/theme.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'main.g.dart';
+part 'theme.g.dart';
 
 @JsonSerializable(anyMap: true, createToJson: false)
-class App {
-  @JsonKey(required: true, disallowNullValue: true)
-  final String name;
+class Theme {
 
   @JsonKey(disallowNullValue: true)
-  final String? icon;
+  final String? primary;
 
   @JsonKey(disallowNullValue: true)
-  final Theme? theme;
+  final String? primaryContainer;
+
+  @JsonKey(disallowNullValue: true)
+  final String? surface;
+
+  @JsonKey(disallowNullValue: true)
+  final String? background;
+
+  @JsonKey(disallowNullValue: true)
+  final String? secondary;
+
+  @JsonKey(disallowNullValue: true)
+  final String? secondaryContainer;
+
+  @JsonKey(disallowNullValue: true)
+  final String? error;
+
+  @JsonKey(disallowNullValue: true)
+  final String? onPrimary;
+
+  @JsonKey(disallowNullValue: true)
+  final String? onSecondary;
+
+  @JsonKey(disallowNullValue: true)
+  final String? onSurface;
+
+  @JsonKey(disallowNullValue: true)
+  final String? onBackground;
+
+  @JsonKey(disallowNullValue: true)
+  final String? onError;
+
+  @JsonKey(disallowNullValue: true)
+  final String? brightness;
 
 
-  App({
-    required this.name,
-    this.icon,
-    this.theme,
+  Theme({
+    this.primary,
+    this.primaryContainer,
+    this.surface,
+    this.background,
+    this.secondary,
+    this.secondaryContainer,
+    this.error,
+    this.onPrimary,
+    this.onSecondary,
+    this.onSurface,
+    this.onBackground,
+    this.onError,
+    this.brightness,
   });
 
-  factory App.fromJson(Map<String, dynamic> json) => _$AppFromJson(json);
+  factory Theme.fromJson(Map<String, dynamic> json) => _$ThemeFromJson(json);
 }

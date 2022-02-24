@@ -87,19 +87,19 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
 
     this.config.flavors.forEach((name, flavor) {
       buffer.writeln('    ColorScheme colorScheme${name.pascalCase} = ColorScheme(');
-      buffer.writeln('      primary: ${flavor.app.primary},');
-      buffer.writeln('      primaryVariant: Color(0xff239DD1),');
-      buffer.writeln('      surface: Color(0xff5EBE4E),');
-      buffer.writeln('      background: Color(0xffF1F3F4),');
-      buffer.writeln('      secondary: ${flavor.app.secondary},');
-      buffer.writeln('      secondaryVariant: Color(0xff606260),');
-      buffer.writeln('      error: Color(0xffE2173A),');
-      buffer.writeln('      onPrimary: Color(0xffBABABA),');
-      buffer.writeln('      onSecondary: Color(0xff239DD1),');
-      buffer.writeln('      onSurface: Color(0xffF1F3F4),');
-      buffer.writeln('      onBackground: Color(0xff606260),');
-      buffer.writeln('      onError: Color(0xffE2173A),');
-      buffer.writeln('      brightness: Brightness.light,');
+      buffer.writeln('      primary: ${flavor.app.theme?.primary ?? 'Color(0xff5EBE4E)'},');
+      buffer.writeln('      primaryContainer: ${flavor.app.theme?.primaryContainer ?? 'Color(0xff239DD1)'},');
+      buffer.writeln('      surface: ${flavor.app.theme?.surface ?? 'Color(0xff5EBE4E)'},');
+      buffer.writeln('      background: ${flavor.app.theme?.background ?? 'Color(0xffF1F3F4)'},');
+      buffer.writeln('      secondary: ${flavor.app.theme?.secondary ?? 'Color(0xffF1F3F4)'},');
+      buffer.writeln('      secondaryContainer: ${flavor.app.theme?.secondaryContainer ?? 'Color(0xff606260)'},');
+      buffer.writeln('      error: ${flavor.app.theme?.error ?? 'Color(0xffE2173A)'},');
+      buffer.writeln('      onPrimary: ${flavor.app.theme?.onPrimary ?? 'Color(0xffBABABA)'},');
+      buffer.writeln('      onSecondary: ${flavor.app.theme?.onSecondary ?? 'Color(0xff239DD1)'},');
+      buffer.writeln('      onSurface: ${flavor.app.theme?.onSurface ?? 'Color(0xffF1F3F4)'},');
+      buffer.writeln('      onBackground: ${flavor.app.theme?.onBackground ?? 'Color(0xff606260)'},');
+      buffer.writeln('      onError: ${flavor.app.theme?.onError ?? 'Color(0xffE2173A)'},');
+      buffer.writeln('      brightness: ${flavor.app.theme?.brightness ?? 'Brightness.light'},');
       buffer.writeln('    );');
       buffer.writeln();
     });

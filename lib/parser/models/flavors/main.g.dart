@@ -9,13 +9,12 @@ part of 'main.dart';
 App _$AppFromJson(Map json) {
   $checkKeys(
     json,
-    requiredKeys: const ['name', 'primary', 'secondary'],
-    disallowNullValues: const ['name', 'icon', 'primary', 'secondary'],
+    requiredKeys: const ['name'],
+    disallowNullValues: const ['name', 'icon', 'theme'],
   );
   return App(
     name: json['name'] as String,
     icon: json['icon'] as String?,
-    primary: json['primary'] as String,
-    secondary: json['secondary'] as String,
+    theme: Theme.fromJson(Map<String, dynamic>.from(json['theme'] as Map)),
   );
 }
