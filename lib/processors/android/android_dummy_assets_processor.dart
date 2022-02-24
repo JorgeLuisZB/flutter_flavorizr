@@ -39,7 +39,7 @@ class AndroidDummyAssetsProcessor extends QueueProcessor {
                 (String flavorName, Flavor flavor) => MapEntry(
                   flavorName,
                   DummyAssetsProcessor(
-                    source,
+                    '$source/$flavorName/res',
                     '$destination/$flavorName/res',
                     flavor.android,
                     config: config,

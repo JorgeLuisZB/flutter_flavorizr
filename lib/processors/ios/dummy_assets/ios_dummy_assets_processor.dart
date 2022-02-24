@@ -39,7 +39,7 @@ class IOSDummyAssetsProcessor extends QueueProcessor {
   }) : super(
           [
             DummyAssetsProcessor(
-              '$source/AppIcon.appiconset',
+              '$source/$flavorName/AppIcon.appiconset',
               '$destination/AppIcon.${flavorName.pascalCase}.appiconset',
               os,
               config: config,

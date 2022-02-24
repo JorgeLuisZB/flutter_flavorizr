@@ -83,7 +83,7 @@ class K {
 
   static String tempAndroidPath = '$tempPath/android';
 
-  static String tempAndroidResPath = '$tempAndroidPath/res';
+  static String tempAndroidResPath = '$tempAndroidPath';
 
   static String tempFlutterPath = '$tempPath/flutter';
 
