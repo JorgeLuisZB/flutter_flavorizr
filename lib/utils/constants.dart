@@ -101,7 +101,7 @@ class K {
 
   static String tempiOSPath = '$tempPath/ios';
 
-  static String tempiOSAssetsPath = '$tempiOSPath/Assets.xcassets';
+  static String tempiOSAssetsPath = '$tempiOSPath';
 
   static String tempiOSLaunchScreenPath =
       '$tempiOSPath/LaunchScreen.storyboard';
