@@ -26,6 +26,7 @@
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/ios/launch_screen/ios_target_launchscreen_file_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSTargetsLaunchScreenFileProcessor extends QueueProcessor {
   IOSTargetsLaunchScreenFileProcessor(

@@ -27,6 +27,7 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/parser/models/flavors/flavor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/ios/dummy_assets/ios_dummy_assets_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSDummyAssetsTargetsProcessor extends QueueProcessor {
   IOSDummyAssetsTargetsProcessor(
@@ -37,11 +38,11 @@ class IOSDummyAssetsTargetsProcessor extends QueueProcessor {
           config.flavors
               .map(
                 (String flavorName, Flavor flavor) => MapEntry(
-                  flavorName,
+                  flavorName.pascalCase,
                   IOSDummyAssetsProcessor(
                     source,
                     destination,
-                    flavorName,
+                    flavorName.pascalCase,
                     flavor.ios,
                     config: config,
                   ),

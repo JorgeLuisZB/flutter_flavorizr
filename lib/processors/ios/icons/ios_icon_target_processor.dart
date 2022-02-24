@@ -27,6 +27,7 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/image_resizer_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/utils/constants.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 import 'package:sprintf/sprintf.dart';
 
 class IOSIconTargetProcessor extends QueueProcessor {
@@ -59,7 +60,7 @@ class IOSIconTargetProcessor extends QueueProcessor {
                   fileName,
                   ImageResizerProcessor(
                     source,
-                    sprintf(K.iOSAppIconPath, [flavorName, fileName]),
+                    sprintf(K.iOSAppIconPath, [flavorName.pascalCase, fileName]),
                     size,
                     config: config,
                   ),

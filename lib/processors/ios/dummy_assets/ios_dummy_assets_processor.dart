@@ -27,6 +27,7 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/parser/models/flavors/ios.dart';
 import 'package:flutter_flavorizr/processors/commons/dummy_assets_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSDummyAssetsProcessor extends QueueProcessor {
   IOSDummyAssetsProcessor(
@@ -39,13 +40,13 @@ class IOSDummyAssetsProcessor extends QueueProcessor {
           [
             DummyAssetsProcessor(
               '$source/AppIcon.appiconset',
-              '$destination/${flavorName}AppIcon.appiconset',
+              '$destination/${flavorName.pascalCase}.AppIcon.appiconset',
               os,
               config: config,
             ),
             DummyAssetsProcessor(
               '$source/LaunchImage.imageset',
-              '$destination/${flavorName}LaunchImage.imageset',
+              '$destination/${flavorName.pascalCase}LaunchImage.imageset',
               os,
               config: config,
             ),

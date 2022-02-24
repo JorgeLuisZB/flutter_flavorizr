@@ -30,6 +30,7 @@ import 'package:flutter_flavorizr/processors/commons/replace_string_processor.da
 import 'package:flutter_flavorizr/processors/commons/runtime_file_string_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/shell_processor.dart';
 import 'package:flutter_flavorizr/utils/ios_utils.dart' as IOSUtils;
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSTargetLaunchScreenFileProcessor extends QueueProcessor {
   IOSTargetLaunchScreenFileProcessor(
@@ -44,14 +45,14 @@ class IOSTargetLaunchScreenFileProcessor extends QueueProcessor {
           [
             CopyFileProcessor(
               source,
-              '$destination/${flavorName}LaunchScreen.storyboard',
+              '$destination/${flavorName.pascalCase}LaunchScreen.storyboard',
               config: config,
             ),
             RuntimeFileStringProcessor(
-              '$destination/${flavorName}LaunchScreen.storyboard',
+              '$destination/${flavorName.pascalCase}LaunchScreen.storyboard',
               ReplaceStringProcessor(
                 '[[FLAVOR_NAME]]',
-                flavorName,
+                flavorName.pascalCase,
                 config: config,
               ),
               config: config,
@@ -62,7 +63,7 @@ class IOSTargetLaunchScreenFileProcessor extends QueueProcessor {
                 script,
                 project,
                 IOSUtils.flatPath(
-                    '$destination/${flavorName}LaunchScreen.storyboard'),
+                    '$destination/${flavorName.pascalCase}LaunchScreen.storyboard'),
               ],
               config: config,
             )

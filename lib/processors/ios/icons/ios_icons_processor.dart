@@ -27,6 +27,7 @@ import 'package:flutter_flavorizr/extensions/extensions+map.dart';
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/ios/icons/ios_icon_target_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSIconsProcessor extends QueueProcessor {
   IOSIconsProcessor({
@@ -37,10 +38,10 @@ class IOSIconsProcessor extends QueueProcessor {
                   flavor.app.icon != null || flavor.ios.icon != null)
               .map(
                 (flavorName, flavor) => MapEntry(
-                  flavorName,
+                  flavorName.pascalCase,
                   IOSIconTargetProcessor(
                     flavor.ios.icon ?? flavor.app.icon ?? '',
-                    flavorName,
+                    flavorName.pascalCase,
                     config: config,
                   ),
                 ),
