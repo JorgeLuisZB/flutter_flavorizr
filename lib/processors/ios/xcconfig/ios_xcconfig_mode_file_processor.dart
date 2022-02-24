@@ -46,7 +46,7 @@ class IOSXCConfigModeFileProcessor extends QueueProcessor {
   }) : super(
           [
             NewFileStringProcessor(
-              '$path/${flavorName.pascalCase}${target.name.pascalCase}.xcconfig',
+              '$path/${flavorName.pascalCase}${target.name}.xcconfig',
               IOSXCConfigProcessor(
                 flavorName,
                 flavor,
@@ -60,7 +60,7 @@ class IOSXCConfigModeFileProcessor extends QueueProcessor {
               [
                 script,
                 project,
-                IOSUtils.flatPath('$path/${flavorName.pascalCase}${target.name.pascalCase}.xcconfig'),
+                IOSUtils.flatPath('$path/${flavorName.pascalCase}${target.name}.xcconfig'),
                 'Flutter',
               ],
               config: config,

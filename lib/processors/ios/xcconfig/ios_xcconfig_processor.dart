@@ -68,6 +68,7 @@ class IOSXCConfigProcessor extends StringProcessor {
       'FLUTTER_TARGET': Variable(value: 'lib/main-${_flavorName.pascalCase}.dart'),
       'ASSET_PREFIX': Variable(value: _flavorName.pascalCase),
       'BUNDLE_NAME': Variable(value: _flavor.app.name.titleCase),
+      'APP_DISPLAY_NAME': Variable(value: _flavor.app.name.titleCase),
     })
       ..addAll(
         _flavor.ios.variables.where((_, variable) =>
