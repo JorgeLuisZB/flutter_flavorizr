@@ -10,7 +10,27 @@ Theme _$ThemeFromJson(Map json) {
   $checkKeys(
     json,
     requiredKeys: const [],
-    disallowNullValues: const ['primary', 'primaryContainer', 'surface', 'background', 'secondary', 'secondaryContainer', 'error', 'onPrimary', 'onSecondary', 'onSurface', 'onBackground', 'onError', 'brightness',],
+    disallowNullValues: const [
+      'primary',
+      'primaryContainer',
+      'surface',
+      'background',
+      'secondary',
+      'secondaryContainer',
+      'error',
+      'onPrimary',
+      'onSecondary',
+      'onSurface',
+      'onBackground',
+      'onError',
+      'brightness',
+      'selectedCarText',
+      'unselectedCarText',
+      'navbarSelected',
+      'navbarUnselected',
+      'navbarBackground',
+      'tabsBackground'
+    ],
   );
   return Theme(
     primary: json['primary'] as String?,
@@ -26,5 +46,11 @@ Theme _$ThemeFromJson(Map json) {
     onBackground: json['onBackground'] as String?,
     onError: json['onError'] as String?,
     brightness: json['brightness'] as String?,
+    selectedCarText: json['selectedCarText'] as String?,
+    unselectedCarText: json['unselectedCarText'] as String?,
+    navbarSelected: json['navbarSelected'] as String?,
+    navbarUnselected: json['navbarUnselected'] as String?,
+    navbarBackground: json['navbarBackground'] as String?,
+    tabsBackground: json['tabsBackground'] as String?,
   );
 }

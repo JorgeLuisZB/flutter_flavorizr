@@ -69,6 +69,24 @@ class Theme {
   @JsonKey(disallowNullValue: true)
   final String? brightness;
 
+  @JsonKey(disallowNullValue: true)
+  final String? selectedCarText;
+
+  @JsonKey(disallowNullValue: true)
+  final String? unselectedCarText;
+
+  @JsonKey(disallowNullValue: true)
+  final String? navbarSelected;
+
+  @JsonKey(disallowNullValue: true)
+  final String? navbarUnselected;
+
+  @JsonKey(disallowNullValue: true)
+  final String? navbarBackground;
+
+  @JsonKey(disallowNullValue: true)
+  final String? tabsBackground;
+
 
   Theme({
     this.primary,
@@ -84,6 +102,12 @@ class Theme {
     this.onBackground,
     this.onError,
     this.brightness,
+    this.selectedCarText,
+    this.unselectedCarText,
+    this.navbarSelected,
+    this.navbarUnselected,
+    this.navbarBackground,
+    this.tabsBackground,
   });
 
   factory Theme.fromJson(Map<String, dynamic> json) => _$ThemeFromJson(json);

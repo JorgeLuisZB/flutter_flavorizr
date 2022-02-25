@@ -106,13 +106,21 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
   }
 
   void _appendInstanceTheme(StringBuffer buffer) {
-    for (int i = 0; i < this.config.flavors.keys.length; i++) {
-      String flavorName = this.config.flavors.keys.elementAt(i);
+    int i = 0;
+    this.config.flavors.forEach((name, flavor) {
+      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${name}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${name}) {');
 
-      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
-      buffer.writeln('      return ThemeData.from(colorScheme: colorScheme${flavorName.pascalCase});');
+        flavor.app.theme?.selectedCarText != null ? buffer.writeln('      selectedCarText = ${flavor.app.theme?.selectedCarText};') : null;
+        flavor.app.theme?.unselectedCarText != null ? buffer.writeln('      unselectedCarText = ${flavor.app.theme?.unselectedCarText};') : null;
+        flavor.app.theme?.navbarSelected != null ? buffer.writeln('      navbarSelected = ${flavor.app.theme?.navbarSelected};') : null;
+        flavor.app.theme?.navbarUnselected != null ? buffer.writeln('      navbarUnselected = ${flavor.app.theme?.navbarUnselected};') : null;
+        flavor.app.theme?.navbarBackground != null ? buffer.writeln('      navbarBackground = ${flavor.app.theme?.navbarBackground};') : null;
+        flavor.app.theme?.tabsBackground != null ? buffer.writeln('      tabsBackground = ${flavor.app.theme?.tabsBackground};') : null;
+
+      buffer.writeln('      return ThemeData.from(colorScheme: colorScheme${name.pascalCase});');
       buffer.write('    } else ');
-    };
+      i++;
+    });
 
     buffer.writeln('{');
     buffer.writeln('      return ThemeData.from(colorScheme: colorSchemeIkon);');
