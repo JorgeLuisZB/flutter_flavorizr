@@ -28,6 +28,8 @@ import 'package:flutter_flavorizr/parser/models/flavors/flavor.dart';
 import 'package:flutter_flavorizr/processors/commons/dummy_assets_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 
+import 'google/firebase/android_target_firebase_processor.dart';
+
 class AndroidGoogleServiceProcessor extends QueueProcessor {
   AndroidGoogleServiceProcessor(
     String source,
@@ -36,12 +38,12 @@ class AndroidGoogleServiceProcessor extends QueueProcessor {
   }) : super(
           config.flavors
               .map(
-                (String flavorName, Flavor flavor) => MapEntry(
+                (flavorName, flavor) => MapEntry(
                   flavorName,
-                  DummyAssetsProcessor(
-                    '$source/$flavorName/google-services.json',
-                    '$destination/$flavorName/google-services.json',
-                    flavor.android,
+                  AndroidTargetFirebaseProcessor(
+                    source,
+                    destination,
+                    flavorName,
                     config: config,
                   ),
                 ),

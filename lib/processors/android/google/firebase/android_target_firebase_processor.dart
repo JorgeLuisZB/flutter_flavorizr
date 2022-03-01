@@ -41,7 +41,7 @@ class AndroidTargetFirebaseProcessor extends QueueProcessor {
               config: config,
             ),
             CopyFileProcessor(
-              source,
+              '$source/$flavorName/google-services.json',
               '$destination/$flavorName/google-services.json',
               config: config,
             ),

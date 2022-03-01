@@ -56,8 +56,8 @@ class FlutterAssetsProcessor extends StringProcessor {
     this.config.flavors.forEach((name, flavor) {
       buffer.writeln('  // ${flavor.app.name}');
       buffer.writeln('  static const String ${name.camelCase}Logo = \'assets/logos/${name}_logo.svg\';');
-      buffer.writeln('  static const String ${name.camelCase}Pin = \'assets/icons/${name}pin.png\';');
-      buffer.writeln('  static const String ${name.camelCase}HLogo = \'assets/logos/${name}logo_h.svg\';');
+      buffer.writeln('  static const String ${name.camelCase}Pin = \'assets/icons/${name}_pin.png\';');
+      buffer.writeln('  static const String ${name.camelCase}HLogo = \'assets/logos/${name}_logo_h.svg\';');
       buffer.writeln();
     });
     buffer.writeln('}');
