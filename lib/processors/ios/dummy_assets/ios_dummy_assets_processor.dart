@@ -44,12 +44,12 @@ class IOSDummyAssetsProcessor extends QueueProcessor {
               os,
               config: config,
             ),
-            // DummyAssetsProcessor(
-            //   '$source/$flavorName/Assets.xcassets/LaunchImage.imageset',
-            //   '$destination/${flavorName.pascalCase}LaunchImage.imageset',
-            //   os,
-            //   config: config,
-            // ),
+            DummyAssetsProcessor(
+              '$source/$flavorName/Assets.xcassets/LaunchImage.imageset',
+              '$destination/${flavorName.pascalCase}LaunchImage.imageset',
+              os,
+              config: config,
+            ),
           ],
           config: config,
         );
