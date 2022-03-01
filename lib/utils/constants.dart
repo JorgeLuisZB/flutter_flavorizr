@@ -48,6 +48,8 @@ class K {
 
   static String flutterFlavorAppIdPath = '$flutterPath/app/utils/flavor_app_id.dart';
 
+  static String flutterFlavorAssets = '$flutterPath/app/utils/flavor_assets.dart';
+
   static String flutterAppPath = '$flutterPath/main.dart';
 
   static String flutterMainFlavorPath = '$flutterPath/flavors';
@@ -58,6 +60,7 @@ class K {
 
   static String flutterThemesPath = '$flutterPath/app/themes';
 
+  static String flutterLogosPath = 'assets/logos';
   // static String flutterPagesPath = '$flutterPath/pages';
 
   // static String flutterMainPagePath = '$flutterPagesPath/home_page.dart';
@@ -96,6 +99,8 @@ class K {
   static String tempFlutterUtilsPath = '$tempFlutterPath/app/utils';
 
   static String tempFlutterThemePath = '$tempFlutterPath/app/themes';
+
+  static String tempFlutterLogosPath = '$tempFlutterPath/logos';
 
   // static String tempFlutterPagesPath = '$tempFlutterPath/pages';
 

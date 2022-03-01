@@ -28,6 +28,7 @@ import 'dart:io';
 import 'package:flutter_flavorizr/parser/models/pubspec.dart';
 import 'package:flutter_flavorizr/processors/android/android_build_gradle_processor.dart';
 import 'package:flutter_flavorizr/processors/android/android_dummy_assets_processor.dart';
+import 'package:flutter_flavorizr/processors/android/android_google_service_processor.dart';
 import 'package:flutter_flavorizr/processors/android/android_manifest_processor.dart';
 import 'package:flutter_flavorizr/processors/android/icons/android_icons_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/abstract_processor.dart';
@@ -39,6 +40,7 @@ import 'package:flutter_flavorizr/processors/commons/existing_file_string_proces
 import 'package:flutter_flavorizr/processors/commons/new_file_string_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/unzip_file_processor.dart';
+import 'package:flutter_flavorizr/processors/flutter/flutter_assets_processor.dart';
 import 'package:flutter_flavorizr/processors/flutter/flutter_flavors_processor.dart';
 import 'package:flutter_flavorizr/processors/flutter/flutter_themes_processor.dart';
 import 'package:flutter_flavorizr/processors/flutter/flutter_utils_processor.dart';
@@ -70,6 +72,7 @@ class Processor extends AbstractProcessor<void> {
     //'android:androidManifest',
     'android:buildGradle',
     'android:dummyAssets',
+    'android:googleService',
     'android:icons',
 
     // Flutter
@@ -78,6 +81,8 @@ class Processor extends AbstractProcessor<void> {
     'flutter:flavorsUtils',
     'flutter:flavorsConstants',
     'flutter:flavorsAppId',
+    'flutter:flavorsAssets',
+    'flutter:logos',
     'flutter:themes',
     'flutter:colorsThemes',
     'flutter:app',
@@ -172,6 +177,13 @@ class Processor extends AbstractProcessor<void> {
         K.androidSrcPath,
         config: pubspec.flavorizr,
       ),
+
+      'android:googleService': AndroidGoogleServiceProcessor(
+        K.tempAndroidResPath,
+        K.androidSrcPath,
+        config: pubspec.flavorizr,
+      ),
+
       'android:icons': AndroidIconsProcessor(
         config: pubspec.flavorizr,
       ),
@@ -203,6 +215,18 @@ class Processor extends AbstractProcessor<void> {
       'flutter:flavorsAppId': NewFileStringProcessor(
         K.flutterFlavorAppIdPath,
         FlutterAppIdProcessor(config: pubspec.flavorizr),
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:flavorsAssets': NewFileStringProcessor(
+        K.flutterFlavorAssets,
+        FlutterAssetsProcessor(config: pubspec.flavorizr),
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:logos': CopyFolderProcessor(
+        K.tempFlutterLogosPath,
+        K.flutterLogosPath,
         config: pubspec.flavorizr,
       ),
 

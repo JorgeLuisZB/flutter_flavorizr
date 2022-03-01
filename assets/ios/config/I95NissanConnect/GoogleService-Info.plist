@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>854210585980-f6ogubavd7b0objskikd7f7o5fdo0lmh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.854210585980-f6ogubavd7b0objskikd7f7o5fdo0lmh</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>854210585980-418a7poo1utd2dllduj93jpqf3mk6rit.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBSo6pgcqQVu6qlgPmE2V9ONQySgGppTAo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>854210585980</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ikontechnologies.i95nissan.connect</string>
+	<key>PROJECT_ID</key>
+	<string>ikon-connec-wl002</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ikon-connec-wl002.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:854210585980:ios:1445a632d972d848f430f9</string>
+</dict>
+</plist>

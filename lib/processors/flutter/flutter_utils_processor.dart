@@ -55,7 +55,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
     buffer.writeln();
     buffer.writeln('import \'package:connect/app/utils/flavor_constants.dart\';');
     buffer.writeln('import \'package:connect/app/utils/flavor_config.dart\';');
-    buffer.writeln('import \'package:connect/app/utils/image_assets.dart\';');
+    buffer.writeln('import \'package:connect/app/utils/flavor_assets.dart\';');
     buffer.writeln('import \'package:connect/app/utils/image_utils.dart\';');
     buffer.writeln('import \'package:flutter/material.dart\';');
     buffer.writeln('import \'package:flutter_svg/svg.dart\';');
@@ -71,7 +71,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {': 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
       buffer.writeln('      return SvgPicture.asset(');
-      buffer.writeln('        SvgRes.${flavorName.camelCase}Logo,');
+      buffer.writeln('        SvgResFlavor.${flavorName.camelCase}Logo,');
       buffer.writeln('        semanticsLabel: \'${flavorName.titleCase} Logo\',');
       buffer.writeln('        width: 178.0,');
       buffer.writeln('        height: 126.0,');
@@ -81,7 +81,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
     buffer.writeln('{');
     buffer.writeln('      return SvgPicture.asset(');
-    buffer.writeln('        SvgRes.ikonLogo,');
+    buffer.writeln('        SvgResFlavor.ikonLogo,');
     buffer.writeln('        semanticsLabel: \'ikon Technologies Logo\',');
     buffer.writeln('        width: 178.0,');
     buffer.writeln('        height: 126.0,');
@@ -116,12 +116,12 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
       String flavorName = config.flavors.keys.elementAt(i);
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
-      buffer.writeln('      return await getBytesFromAsset(SvgRes.${flavorName.camelCase}Pin, 150);');
+      buffer.writeln('      return await getBytesFromAsset(SvgResFlavor.${flavorName.camelCase}Pin, 150);');
       buffer.write('    } else ');
     }
 
     buffer.writeln('{');
-    buffer.writeln('      return await getBytesFromAsset(SvgRes.pinIcon, 150);');
+    buffer.writeln('      return await getBytesFromAsset(SvgResFlavor.pinIcon, 150);');
     buffer.writeln('    }');
     buffer.writeln('  }');
     buffer.writeln();
@@ -135,7 +135,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
       buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
       buffer.writeln('      return SvgPicture.asset(');
-      buffer.writeln('        SvgRes.${flavorName.camelCase}HLogo,');
+      buffer.writeln('        SvgResFlavor.${flavorName.camelCase}HLogo,');
       buffer.writeln('        height: 25,');
       buffer.writeln('        width: 236,');
       buffer.writeln('        fit: BoxFit.contain,');
@@ -145,7 +145,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
 
     buffer.writeln(' {');
     buffer.writeln('      return SvgPicture.asset(');
-    buffer.writeln('        SvgRes.ikonHLogo,');
+    buffer.writeln('        SvgResFlavor.ikonHLogo,');
     buffer.writeln('        height: 25,');
     buffer.writeln('        width: 236,');
     buffer.writeln('        fit: BoxFit.contain,');
