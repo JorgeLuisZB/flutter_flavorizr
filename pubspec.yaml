@@ -5,8 +5,12 @@ repository: https://github.com/AngeloAvv/flutter_flavorizr
 issue_tracker: https://github.com/AngeloAvv/flutter_flavorizr/issues
 homepage: https://www.angelocassano.it
 
+analyzer:
+  enable-experiment:
+    - non-nulleable
+
 environment:
-  sdk: ">=2.10.0 <3.0.0"
+  sdk: ">=2.13.0-68.0.dev <3.0.0"
 
 dependencies:
   flutter:
