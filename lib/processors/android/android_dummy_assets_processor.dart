@@ -27,6 +27,7 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/parser/models/flavors/flavor.dart';
 import 'package:flutter_flavorizr/processors/commons/dummy_assets_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class AndroidDummyAssetsProcessor extends QueueProcessor {
   AndroidDummyAssetsProcessor(
@@ -39,8 +40,8 @@ class AndroidDummyAssetsProcessor extends QueueProcessor {
                 (String flavorName, Flavor flavor) => MapEntry(
                   flavorName,
                   DummyAssetsProcessor(
-                    '$source/$flavorName/res',
-                    '$destination/$flavorName/res',
+                    '$source/${flavorName.camelCase}/res',
+                    '$destination/${flavorName.camelCase}/res',
                     flavor.android,
                     config: config,
                   ),

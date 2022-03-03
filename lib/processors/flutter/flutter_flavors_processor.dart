@@ -54,7 +54,7 @@ class FlutterFlavorsProcessor extends StringProcessor {
     buffer.writeln('enum Flavor {');
 
     config.flavors.keys.forEach((String flavorName) {
-      buffer.writeln('  ${flavorName},');
+      buffer.writeln('  ${flavorName.camelCase},');
     });
 
     buffer.writeln('}');
@@ -110,7 +110,7 @@ class FlutterFlavorsProcessor extends StringProcessor {
     buffer.writeln();
 
     config.flavors.keys.forEach((String flavorName) {
-      buffer.writeln('  static bool is${flavorName.pascalCase}() => _instance.flavor == Flavor.${flavorName};');
+      buffer.writeln('  static bool is${flavorName.pascalCase}() => _instance.flavor == Flavor.${flavorName.camelCase};');
       buffer.writeln();
     });
     buffer.writeln('}');

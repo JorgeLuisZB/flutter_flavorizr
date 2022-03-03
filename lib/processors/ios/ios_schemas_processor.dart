@@ -26,6 +26,7 @@
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/shell_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class IOSSchemasProcessor extends QueueProcessor {
   IOSSchemasProcessor(
@@ -40,7 +41,7 @@ class IOSSchemasProcessor extends QueueProcessor {
               [
                 script,
                 path,
-                flavorName,
+                flavorName.pascalCase,
               ],
               config: config,
             ),

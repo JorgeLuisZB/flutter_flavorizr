@@ -60,13 +60,13 @@ flavorizr:
     grand_auto:
       app:
         name: "Grand Auto Connect"
-          theme:
-            primary: "Color(0xff095A99)"
-            secondary: "Color(0xffF1F3F4)"
-            navbarSelected: "Color(0xffD82027)"
-            navbarBackground: "Color(0xff16191D)"
-            navbarUnselected: "secondaryGrey.withOpacity(0.6)"
-            tabsBackground: "Color(0xffD82027)"
+        theme:
+          primary: "Color(0xff095A99)"
+          secondary: "Color(0xffF1F3F4)"
+          navbarSelected: "Color(0xffD82027)"
+          navbarBackground: "Color(0xff16191D)"
+          navbarUnselected: "secondaryGrey.withOpacity(0.6)"
+          tabsBackground: "Color(0xffD82027)"
       android:
         applicationId: "com.ikontechnologies.grandauto.connect"
 

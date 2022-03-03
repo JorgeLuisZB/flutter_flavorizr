@@ -27,6 +27,7 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/copy_file_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/new_folder_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class AndroidTargetFirebaseProcessor extends QueueProcessor {
   AndroidTargetFirebaseProcessor(
@@ -37,12 +38,12 @@ class AndroidTargetFirebaseProcessor extends QueueProcessor {
   }) : super(
           [
             NewFolderProcessor(
-              '$destination/$flavorName',
+              '$destination/${flavorName.camelCase}',
               config: config,
             ),
             CopyFileProcessor(
-              '$source/$flavorName/google-services.json',
-              '$destination/$flavorName/google-services.json',
+              '$source/${flavorName.camelCase}/google-services.json',
+              '$destination/${flavorName.camelCase}/google-services.json',
               config: config,
             ),
           ],

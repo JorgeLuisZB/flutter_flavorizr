@@ -27,6 +27,8 @@ import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/string_processor.dart';
 import 'package:flutter_flavorizr/utils/string_casing.dart';
 
+import '../../parser/models/flavors/flavor.dart';
+
 class FlutterFlavorUtilsProcessor extends StringProcessor {
   FlutterFlavorUtilsProcessor({
     String? input,
@@ -69,7 +71,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
     for(int i = 0; i < config.flavors.keys.length; i++) {
       String flavorName = config.flavors.keys.elementAt(i);
 
-      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {': 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
+      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName.camelCase}) {': 'if (FlavorConfig.instance.flavor == Flavor.${flavorName.camelCase}) {');
       buffer.writeln('      return SvgPicture.asset(');
       buffer.writeln('        SvgResFlavor.${flavorName.camelCase}Logo,');
       buffer.writeln('        semanticsLabel: \'${flavorName.titleCase} Logo\',');
@@ -92,15 +94,16 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
   }
 
   void _appendFlavorString(StringBuffer buffer) {
+    int index = 0;
     buffer.writeln('  static String getFlavorString() {');
 
-    for(int i = 0; i < config.flavors.keys.length; i++) {
-      String flavorName = config.flavors.keys.elementAt(i);
-
-      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
-      buffer.writeln('      return \'${flavorName.titleCase}\';');
+    config.flavors.forEach((name, flavor) {
+      buffer.writeln(index == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${name.camelCase}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${name.camelCase}) {');
+      buffer.writeln('      return \'${flavor.app.name.titleCase}\';');
       buffer.write('    } else ');
-    }
+
+      index++;
+    });
 
     buffer.writeln(' {');
     buffer.writeln('      return \'Ikon\';');
@@ -115,7 +118,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
     for(int i = 0; i < config.flavors.keys.length; i++) {
       String flavorName = config.flavors.keys.elementAt(i);
 
-      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
+      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName.camelCase}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName.camelCase}) {');
       buffer.writeln('      return await getBytesFromAsset(SvgResFlavor.${flavorName.camelCase}Pin, 150);');
       buffer.write('    } else ');
     }
@@ -133,7 +136,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
     for(int i = 0; i < config.flavors.keys.length; i++) {
       String flavorName = config.flavors.keys.elementAt(i);
 
-      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName}) {');
+      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${flavorName.camelCase}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${flavorName.camelCase}) {');
       buffer.writeln('      return SvgPicture.asset(');
       buffer.writeln('        SvgResFlavor.${flavorName.camelCase}HLogo,');
       buffer.writeln('        height: 25,');
@@ -160,7 +163,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
     buffer.writeln('    switch (FlavorConfig.instance.flavor) {');
 
     config.flavors.keys.forEach((flavorName) {
-      buffer.writeln('      case Flavor.${flavorName}:');
+      buffer.writeln('      case Flavor.${flavorName.camelCase}:');
       buffer.writeln('        return [${flavorName.camelCase}AndroidApplicationId, ${flavorName.camelCase}IOSBundle];');
     });
 

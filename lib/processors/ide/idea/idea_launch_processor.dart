@@ -25,6 +25,7 @@
 
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/processors/commons/string_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 import 'package:xml/xml.dart';
 
 class IdeaLaunchProcessor extends StringProcessor {
@@ -50,18 +51,18 @@ class IdeaLaunchProcessor extends StringProcessor {
         attributes: {'name': 'ProjectRunConfigurationManager'}, nest: () {
       builder.element('configuration', attributes: {
         'default': 'false',
-        'name': 'main-$_flavorName.dart',
+        'name': 'main_$_flavorName.dart',
         'type': 'FlutterRunConfigurationType',
         'factoryName': 'Flutter',
       }, nest: () {
         builder.element('option', attributes: {
           'name': 'buildFlavor',
-          'value': '$_flavorName',
+          'value': '${_flavorName.camelCase}',
         });
 
         builder.element('option', attributes: {
           'name': 'filePath',
-          'value': '\$PROJECT_DIR\$/lib/main-$_flavorName.dart',
+          'value': '\$PROJECT_DIR\$/lib/flavors/main_$_flavorName.dart',
         });
 
         builder.element('method', attributes: {

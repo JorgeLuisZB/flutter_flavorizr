@@ -53,6 +53,7 @@ class FlutterAssetsProcessor extends StringProcessor {
     buffer.writeln('}');
     buffer.writeln();
     buffer.writeln('class SvgResFlavor {');
+    buffer.writeln();
     this.config.flavors.forEach((name, flavor) {
       buffer.writeln('  // ${flavor.app.name}');
       buffer.writeln('  static const String ${name.camelCase}Logo = \'assets/logos/${name}_logo.svg\';');

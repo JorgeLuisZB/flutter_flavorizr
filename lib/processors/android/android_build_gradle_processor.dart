@@ -30,6 +30,7 @@ import 'package:flutter_flavorizr/exception/malformed_resource_exception.dart';
 import 'package:flutter_flavorizr/parser/models/flavorizr.dart';
 import 'package:flutter_flavorizr/parser/models/flavors/android/res_value.dart';
 import 'package:flutter_flavorizr/processors/commons/string_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class AndroidBuildGradleProcessor extends StringProcessor {
   static const String androidEntryPoint = '    // Flavors:';
@@ -118,7 +119,7 @@ class AndroidBuildGradleProcessor extends StringProcessor {
     buffer.writeln('    productFlavors {');
 
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln('        $name {');
+      buffer.writeln('        ${name.camelCase} {');
       buffer.writeln(
           '            dimension "${this.config.app.android.flavorDimensions}"');
       buffer.writeln(
@@ -127,7 +128,7 @@ class AndroidBuildGradleProcessor extends StringProcessor {
       final Map<String, ResValue> resValues = LinkedHashMap.from({
         'app_name': ResValue(
           type: 'string',
-          value: flavor.app.name,
+          value: flavor.app.name.titleCase,
         )
       })
         ..addAll(flavor.android.resValues);

@@ -32,9 +32,9 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
     String? input,
     required Flavorizr config,
   }) : super(
-    input: input,
-    config: config,
-  );
+          input: input,
+          config: config,
+        );
 
   @override
   String execute() {
@@ -88,16 +88,21 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
     this.config.flavors.forEach((name, flavor) {
       buffer.writeln('    ColorScheme colorScheme${name.pascalCase} = ColorScheme(');
       buffer.writeln('      primary: ${flavor.app.theme?.primary ?? 'Color(0xff5EBE4E)'},');
-      buffer.writeln('      primaryContainer: ${flavor.app.theme?.primaryContainer ?? flavor.app.theme?.secondary},');
+      buffer.writeln(
+          '      primaryContainer: ${flavor.app.theme?.primaryContainer ?? flavor.app.theme?.secondary},');
       buffer.writeln('      surface: ${flavor.app.theme?.surface ?? flavor.app.theme?.primary},');
       buffer.writeln('      background: ${flavor.app.theme?.background ?? 'Color(0xffF1F3F4)'},');
       buffer.writeln('      secondary: ${flavor.app.theme?.secondary ?? 'Color(0xffF1F3F4)'},');
-      buffer.writeln('      secondaryContainer: ${flavor.app.theme?.secondaryContainer ?? 'Color(0xff606260)'},');
+      buffer.writeln(
+          '      secondaryContainer: ${flavor.app.theme?.secondaryContainer ?? 'Color(0xff606260)'},');
       buffer.writeln('      error: ${flavor.app.theme?.error ?? 'Color(0xffE2173A)'},');
-      buffer.writeln('      onPrimary: ${flavor.app.theme?.onPrimary ?? flavor.app.theme?.secondary},');
-      buffer.writeln('      onSecondary: ${flavor.app.theme?.onSecondary ?? flavor.app.theme?.primary},');
+      buffer.writeln(
+          '      onPrimary: ${flavor.app.theme?.onPrimary ?? flavor.app.theme?.secondary},');
+      buffer.writeln(
+          '      onSecondary: ${flavor.app.theme?.onSecondary ?? flavor.app.theme?.primary},');
       buffer.writeln('      onSurface: ${flavor.app.theme?.onSurface ?? 'Color(0xffF1F3F4)'},');
-      buffer.writeln('      onBackground: ${flavor.app.theme?.onBackground ?? 'Color(0xff606260)'},');
+      buffer
+          .writeln('      onBackground: ${flavor.app.theme?.onBackground ?? 'Color(0xff606260)'},');
       buffer.writeln('      onError: ${flavor.app.theme?.onError ?? 'Color(0xffE2173A)'},');
       buffer.writeln('      brightness: ${flavor.app.theme?.brightness ?? 'Brightness.light'},');
       buffer.writeln('    );');
@@ -108,14 +113,28 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
   void _appendInstanceTheme(StringBuffer buffer) {
     int i = 0;
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln(i == 0 ? '    if (FlavorConfig.instance.flavor == Flavor.${name}) {' : 'if (FlavorConfig.instance.flavor == Flavor.${name}) {');
+      buffer.writeln(i == 0
+          ? '    if (FlavorConfig.instance.flavor == Flavor.${name.camelCase}) {'
+          : 'if (FlavorConfig.instance.flavor == Flavor.${name.camelCase}) {');
 
-        flavor.app.theme?.selectedCarText != null ? buffer.writeln('      selectedCarText = ${flavor.app.theme?.selectedCarText};') : null;
-        flavor.app.theme?.unselectedCarText != null ? buffer.writeln('      unselectedCarText = ${flavor.app.theme?.unselectedCarText};') : null;
-        flavor.app.theme?.navbarSelected != null ? buffer.writeln('      navbarSelected = ${flavor.app.theme?.navbarSelected};') : null;
-        flavor.app.theme?.navbarUnselected != null ? buffer.writeln('      navbarUnselected = ${flavor.app.theme?.navbarUnselected};') : null;
-        flavor.app.theme?.navbarBackground != null ? buffer.writeln('      navbarBackground = ${flavor.app.theme?.navbarBackground};') : null;
-        flavor.app.theme?.tabsBackground != null ? buffer.writeln('      tabsBackground = ${flavor.app.theme?.tabsBackground};') : null;
+      flavor.app.theme?.selectedCarText != null
+          ? buffer.writeln('      selectedCarText = ${flavor.app.theme?.selectedCarText};')
+          : null;
+      flavor.app.theme?.unselectedCarText != null
+          ? buffer.writeln('      unselectedCarText = ${flavor.app.theme?.unselectedCarText};')
+          : null;
+      flavor.app.theme?.navbarSelected != null
+          ? buffer.writeln('      navbarSelected = ${flavor.app.theme?.navbarSelected};')
+          : null;
+      flavor.app.theme?.navbarUnselected != null
+          ? buffer.writeln('      navbarUnselected = ${flavor.app.theme?.navbarUnselected};')
+          : null;
+      flavor.app.theme?.navbarBackground != null
+          ? buffer.writeln('      navbarBackground = ${flavor.app.theme?.navbarBackground};')
+          : null;
+      flavor.app.theme?.tabsBackground != null
+          ? buffer.writeln('      tabsBackground = ${flavor.app.theme?.tabsBackground};')
+          : null;
 
       buffer.writeln('      return ThemeData.from(colorScheme: colorScheme${name.pascalCase});');
       buffer.write('    } else ');

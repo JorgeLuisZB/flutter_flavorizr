@@ -63,7 +63,7 @@ class FlutterAppIdProcessor extends StringProcessor {
     buffer.writeln('    switch (flavor) {');
 
     this.config.flavors.forEach((name, flavor) {
-      buffer.writeln('      case Flavor.${name}:');
+      buffer.writeln('      case Flavor.${name.camelCase}:');
       buffer.writeln('        this.androidApplicationId = ${name.camelCase}AndroidApplicationId;');
       buffer.writeln('        this.iOSAppId = ${name.camelCase}IOSAppId;');
       buffer.writeln('        break;');
