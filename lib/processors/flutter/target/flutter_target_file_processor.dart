@@ -28,6 +28,7 @@ import 'package:flutter_flavorizr/processors/commons/copy_file_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/queue_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/replace_string_processor.dart';
 import 'package:flutter_flavorizr/processors/commons/runtime_file_string_processor.dart';
+import 'package:flutter_flavorizr/utils/string_casing.dart';
 
 class FlutterTargetFileProcessor extends QueueProcessor {
   FlutterTargetFileProcessor(
@@ -46,7 +47,7 @@ class FlutterTargetFileProcessor extends QueueProcessor {
               '$destination/main_$flavorName.dart',
               ReplaceStringProcessor(
                 '[[FLAVOR_NAME]]',
-                flavorName,
+                flavorName.camelCase,
                 config: config,
               ),
               config: config,
