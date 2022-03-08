@@ -9,7 +9,7 @@ import 'package:get/get.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  FlavorConfig(flavor: Flavor.[[FLAVOR_NAME]], values: null, hasDealer: false);
+  FlavorConfig(flavor: Flavor.[[FLAVOR_NAME]], values: null, hasDealer: true);
 
   await AppConfig().startInitialConfiguration();
 

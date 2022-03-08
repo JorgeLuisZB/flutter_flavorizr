@@ -83,6 +83,7 @@ class Processor extends AbstractProcessor<void> {
     'flutter:flavorsAppId',
     'flutter:flavorsAssets',
     'flutter:logos',
+    'flutter:icons',
     'flutter:themes',
     'flutter:colorsThemes',
     'flutter:app',
@@ -225,6 +226,12 @@ class Processor extends AbstractProcessor<void> {
       ),
 
       'flutter:logos': CopyFolderProcessor(
+        K.tempFlutterLogosPath,
+        K.flutterLogosPath,
+        config: pubspec.flavorizr,
+      ),
+
+      'flutter:icons': CopyFolderProcessor(
         K.tempFlutterLogosPath,
         K.flutterLogosPath,
         config: pubspec.flavorizr,

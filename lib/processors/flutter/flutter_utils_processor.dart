@@ -124,7 +124,7 @@ class FlutterFlavorUtilsProcessor extends StringProcessor {
     }
 
     buffer.writeln('{');
-    buffer.writeln('      return await getBytesFromAsset(SvgResFlavor.pinIcon, 150);');
+    buffer.writeln('      return await getBytesFromAsset(SvgResFlavor.ikonPin, 150);');
     buffer.writeln('    }');
     buffer.writeln('  }');
     buffer.writeln();

@@ -61,6 +61,8 @@ class K {
   static String flutterThemesPath = '$flutterPath/app/themes';
 
   static String flutterLogosPath = 'assets/logos';
+
+  static String flutterIconsPath = 'assets/icons';
   // static String flutterPagesPath = '$flutterPath/pages';
 
   // static String flutterMainPagePath = '$flutterPagesPath/home_page.dart';
@@ -101,6 +103,8 @@ class K {
   static String tempFlutterThemePath = '$tempFlutterPath/app/themes';
 
   static String tempFlutterLogosPath = '$tempFlutterPath/logos';
+
+  static String tempFlutterIconsPath = '$tempFlutterPath/icons';
 
   // static String tempFlutterPagesPath = '$tempFlutterPath/pages';
 
