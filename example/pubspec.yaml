@@ -83,6 +83,7 @@ flavorizr:
           navbarSelected: "Color(0xffC3002F)"
           navbarUnselected: "Color(0xff999999)"
           navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xffC3002F)"
 
       android:
         applicationId: "com.ikontechnologies.i95nissan.connect"
@@ -100,6 +101,7 @@ flavorizr:
           navbarSelected: "Color(0xff1971D4)"
           navbarUnselected: "Color(0xffa4a4a4)"
           navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff1971D4)"
 
       android:
         applicationId: "com.ikontechnologies.northftlauderdalesubaru.connect"
@@ -117,6 +119,7 @@ flavorizr:
           navbarSelected: "Color(0xff07213F)"
           navbarUnselected: "Color(0xffD1D1D1)"
           navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff07213F)"
 
       android:
         applicationId: "com.ikontechnologies.koolchevrolet.connect"

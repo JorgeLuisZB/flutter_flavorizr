@@ -232,8 +232,8 @@ class Processor extends AbstractProcessor<void> {
       ),
 
       'flutter:icons': CopyFolderProcessor(
-        K.tempFlutterLogosPath,
-        K.flutterLogosPath,
+        K.tempFlutterIconsPath,
+        K.flutterIconsPath,
         config: pubspec.flavorizr,
       ),
 
