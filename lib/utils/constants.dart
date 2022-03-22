@@ -73,6 +73,8 @@ class K {
 
   static String iOSRunnerPath = '$iOSPath/Runner';
 
+  static String iOSConfigPath = '$iOSPath/config';
+
   static String iOSRunnerProjectPath = '$iOSPath/Runner.xcodeproj';
 
   static String iOSPListPath = '$iOSRunnerPath/Info.plist';
@@ -120,6 +122,8 @@ class K {
   static String tempScriptsPath = '$tempPath/scripts';
 
   static String tempiOSScriptsPath = '$tempScriptsPath/ios';
+
+  static String tempiOSConfigPath = '$tempiOSPath/config';
 
   static String tempiOSCreateSchemeScriptPath =
       '$tempiOSScriptsPath/create_scheme.rb';

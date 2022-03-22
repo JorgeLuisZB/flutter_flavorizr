@@ -98,6 +98,7 @@ class Processor extends AbstractProcessor<void> {
     'ios:dummyAssets',
     'ios:icons',
     'ios:plist',
+    'ios:configGoogleService',
     //'ios:launchScreen',
 
     // Google
@@ -304,6 +305,13 @@ class Processor extends AbstractProcessor<void> {
         IOSPListProcessor(config: pubspec.flavorizr),
         config: pubspec.flavorizr,
       ),
+
+      'ios:configGoogleService': CopyFolderProcessor(
+        K.tempiOSConfigPath,
+        K.iOSConfigPath,
+        config: pubspec.flavorizr,
+      ),
+
       'ios:launchScreen': IOSTargetsLaunchScreenFileProcessor(
         'ruby',
         K.tempiOSAddFileScriptPath,
