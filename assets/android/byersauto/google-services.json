@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "854210585980",
+    "project_id": "ikon-connec-wl002",
+    "storage_bucket": "ikon-connec-wl002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854210585980:android:adb86699c9bbf6edf430f9",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.byersauto.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854210585980-iukbj6vml30a469hl074gnfrma62sftb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.byersauto.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGNZ9na7TgM6-1vAvRSduTnd41la1D1Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>854210585980-85htdgvv4kpnobsk5hv7u0eej0arft3h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.854210585980-85htdgvv4kpnobsk5hv7u0eej0arft3h</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>854210585980-h4igq0et31gr86a5pk3170j3fif18usl.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBSo6pgcqQVu6qlgPmE2V9ONQySgGppTAo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>854210585980</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ikontechnologies.stingraychevy.connect</string>
+	<key>PROJECT_ID</key>
+	<string>ikon-connec-wl002</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ikon-connec-wl002.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:854210585980:ios:97f46d3c137fb70cf430f9</string>
+</dict>
+</plist>
