@@ -29,7 +29,8 @@ Theme _$ThemeFromJson(Map json) {
       'navbarSelected',
       'navbarUnselected',
       'navbarBackground',
-      'tabsBackground'
+      'tabsBackground',
+      'gloveboxMultidocsAccent'
     ],
   );
   return Theme(
@@ -52,5 +53,6 @@ Theme _$ThemeFromJson(Map json) {
     navbarUnselected: json['navbarUnselected'] as String?,
     navbarBackground: json['navbarBackground'] as String?,
     tabsBackground: json['tabsBackground'] as String?,
+    gloveboxMultidocsAccent: json['gloveboxMultidocsAccent'] as String?,
   );
 }

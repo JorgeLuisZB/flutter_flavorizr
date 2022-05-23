@@ -11,9 +11,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   FlavorConfig(flavor: Flavor.[[FLAVOR_NAME]], values: null, hasDealer: true);
 
-  await AppConfig().startInitialConfiguration();
-
-  runApp(IkonConnectApp());
+  await AppConfig().startInitialConfiguration(IkonConnectApp());
 }
 
 class IkonConnectApp extends StatelessWidget {

@@ -50,6 +50,7 @@ flavorizr:
           primary: "Color(0xff5EBE4E)"
           secondary: "Color(0xffF1F3F4)"
           onSecondary: "Color(0xff239DD1)"
+          gloveboxMultidocsAccent: "Color(0xff5EBE4E)"
 
       android:
         applicationId: "com.ikontechnologies.ikonconnect"
@@ -67,6 +68,7 @@ flavorizr:
           navbarSelected: "Color(0xff095A99)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff1B7ECA)"
+          gloveboxMultidocsAccent: "Color(0xffF1F3F4)"
 
       android:
         applicationId: "com.ikontechnologies.classic.connect"
@@ -84,6 +86,7 @@ flavorizr:
           navbarSelected: "Color(0xff1B7ECA)"
           navbarUnselected: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff1B7ECA)"
+          gloveboxMultidocsAccent: "Color(0xffF1F3F4)"
 
       android:
         applicationId: "com.ikontechnologies.crystal.connect"
@@ -101,6 +104,7 @@ flavorizr:
           navbarSelected: "Color(0xff1D5184)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff2C8F88)"
+          gloveboxMultidocsAccent: "Color(0xffF1F3F4)"
 
       android:
         applicationId: "com.ikontechnologies.stanley.connect"
@@ -119,6 +123,7 @@ flavorizr:
           navbarUnselected: "Color(0xffF1F3F4)"
           navbarBackground: "Color(0xff16191D)"
           tabsBackground: "Color(0XFF596B73)"
+          gloveboxMultidocsAccent: "Color(0xffD82027)"
 
       android:
         applicationId: "com.ikontechnologies.southern441.connect"
@@ -137,6 +142,7 @@ flavorizr:
           navbarBackground: "Color(0xff16191D)"
           navbarUnselected: "secondaryGrey.withOpacity(0.6)"
           tabsBackground: "Color(0xffD82027)"
+          gloveboxMultidocsAccent: "Color(0xff095A99)"
 
       android:
         applicationId: "com.ikontechnologies.grandauto.connect"
@@ -154,6 +160,7 @@ flavorizr:
           navbarSelected: "Color(0xffD8A31A)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xffD8A31A)"
+          gloveboxMultidocsAccent: "Color(0xff0D2440)"
 
       android:
         applicationId: "com.ikontechnologies.platinum.connect"
@@ -171,6 +178,7 @@ flavorizr:
           navbarSelected: "Color(0xff239DD1)"
           navbarUnselected: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff239DD1)"
+          gloveboxMultidocsAccent: "Color(0xff239DD1)"
 
       android:
         applicationId: "com.ikontechnologies.pegasus.connect"
@@ -188,6 +196,7 @@ flavorizr:
           navbarSelected: "Color(0xff617295)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff66B6D9)"
+          gloveboxMultidocsAccent: "Color(0xff66B6D9)"
 
       android:
         applicationId: "com.ikontechnologies.parkway.connect"
@@ -205,6 +214,7 @@ flavorizr:
           navbarSelected: "Color(0xff01509C)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff66B6D9)"
+          gloveboxMultidocsAccent: "Color(0xffF1F3F4)"
 
       android:
         applicationId: "com.ikontechnologies.southwest.connect"
@@ -223,6 +233,7 @@ flavorizr:
           navbarUnselected: "Color(0xffF1F3F4)"
           navbarBackground: "Color(0xff16191D)"
           tabsBackground: "Color(0xffDD9B37)"
+          gloveboxMultidocsAccent: "Color(0xffDD9B37)"
 
       android:
         applicationId: "com.ikontechnologies.triplecrown.connect"
@@ -240,6 +251,7 @@ flavorizr:
           navbarSelected: "Color(0xff0081C4)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff83C5BE)"
+          gloveboxMultidocsAccent: "Color(0xff83C5BE)"
 
       android:
         applicationId: "com.ikontechnologies.ourisman.connect"
@@ -259,6 +271,7 @@ flavorizr:
           navbarSelected: "Color(0xff94E8B4)"
           navbarUnselected: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff94E8B4)"
+          gloveboxMultidocsAccent: "Color(0xff94E8B4)"
 
       android:
         applicationId: "com.ikontechnologies.silsbee.connect"
@@ -279,6 +292,7 @@ flavorizr:
           navbarUnselected: "Color(0xffF1F3F4)"
           navbarBackground: "Color(0xff1A3E6E)"
           tabsBackground: "Color(0xff93BEFF)"
+          gloveboxMultidocsAccent: "Color(0xff93BEFF)"
 
       android:
         applicationId: "com.ikontechnologies.irwin.connect"
@@ -299,6 +313,7 @@ flavorizr:
           navbarBackground: "Color(0xff50708E)"
           navbarUnselected: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xffE49D22)"
+          gloveboxMultidocsAccent: "Color(0xffE49D22)"
 
       android:
         applicationId: "com.ikontechnologies.citykia.connect"
@@ -319,6 +334,7 @@ flavorizr:
           navbarUnselected: "Color(0xffF1F3F4)"
           navbarBackground: "Color(0xff384769)"
           tabsBackground: "Color(0xff2C8C87)"
+          gloveboxMultidocsAccent: "Color(0xff2C8C87)"
 
       android:
         applicationId: "com.ikontechnologies.vanguardkia.connect"
@@ -339,6 +355,7 @@ flavorizr:
           navbarBackground: "Color(0xff2D2628)"
           navbarUnselected: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xffD32026)"
+          gloveboxMultidocsAccent: "Color(0xff2D2628)"
 
       android:
         applicationId: "com.ikontechnologies.bentonauto.connect"
@@ -359,6 +376,7 @@ flavorizr:
           navbarUnselected: "Color(0xffF1F3F4)"
           navbarBackground: "Color(0xff2A3038)"
           tabsBackground: "Color(0xff6C809A)"
+          gloveboxMultidocsAccent: "Color(0xff6C809A)"
 
       android:
         applicationId: "com.ikontechnologies.tallassee.connect"
@@ -376,6 +394,7 @@ flavorizr:
           navbarSelected: "Color(0xff01A1DD)"
           navbarBackground: "Color(0xffFFFFFF)"
           tabsBackground: "Color(0xff0A5199)"
+          gloveboxMultidocsAccent: "Color(0xff01A1DD)"
 
       android:
         applicationId: "com.ikontechnologies.umansky.connect"
@@ -394,6 +413,7 @@ flavorizr:
           navbarUnselected: "Color(0xff6C809A)"
           navbarBackground: "Color(0xffFFFFFF)"
           tabsBackground: "Color(0xffC2272F)"
+          gloveboxMultidocsAccent: "Color(0xff6C809A)"
 
       android:
         applicationId: "com.ikontechnologies.jackingram.connect"
@@ -414,6 +434,7 @@ flavorizr:
           navbarUnselected: "Color(0xffF1F3F4)"
           navbarBackground: "Color(0xff384769)"
           tabsBackground: "Color(0xff2C8C87)"
+          gloveboxMultidocsAccent: "Color(0xff2C8C87)"
 
       android:
         applicationId: "com.ikontechnologies.vanguardgmc.connect"
@@ -431,6 +452,7 @@ flavorizr:
           navbarSelected: "Color(0xff0081C4)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff83C5BE)"
+          gloveboxMultidocsAccent: "Color(0xff83C5BE)"
 
       android:
         applicationId: "com.ikontechnologies.ourismanhyundai.connect"
@@ -449,6 +471,7 @@ flavorizr:
           navbarBackground: "Color(0xff2D2628)"
           navbarUnselected: "Color(0xFFF1F3F4)"
           tabsBackground: "Color(0xffD32026)"
+          gloveboxMultidocsAccent: "Color(0xff2D2628)"
 
       android:
         applicationId: "com.ikontechnologies.bentonnissan.connect"
@@ -467,6 +490,7 @@ flavorizr:
           navbarUnselected: "Color(0xFF606260)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xff2F4858)"
+          gloveboxMultidocsAccent: "Color(0xff2F4858)"
 
       android:
         applicationId: "com.ikontechnologies.koeppel.connect"
@@ -484,6 +508,7 @@ flavorizr:
           navbarSelected: "Color(0xff00508F)"
           navbarUnselected: "Color(0xFF606260)"
           navbarBackground: "Color(0xffffffff)"
+          gloveboxMultidocsAccent: "Color(0xff334B49)"
 
       android:
         applicationId: "com.ikontechnologies.jenkinsautogroup.connect"
@@ -504,6 +529,7 @@ flavorizr:
           navbarUnselected: "Color(0xffA6A6A6)"
           navbarBackground: "Color(0xffFFFFFF)"
           tabsBackground: "Color(0xff2C8C87)"
+          gloveboxMultidocsAccent: "Color(0xff2C8C87)"
 
       android:
         applicationId: "com.ikontechnologies.vanguardford.connect"
@@ -522,6 +548,7 @@ flavorizr:
           navbarUnselected: "Color(0xFFA6A6A6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xffBEA6A1)"
+          gloveboxMultidocsAccent: "Color(0xffBEA6A1)"
 
       android:
         applicationId: "com.ikontechnologies.byersauto.connect"
@@ -540,6 +567,7 @@ flavorizr:
           navbarUnselected: "Color(0xFFA6A6A6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xffC52035)"
+          gloveboxMultidocsAccent: "Color(0xff231F20)"
 
       android:
         applicationId: "com.ikontechnologies.naplesnissan.connect"
@@ -558,6 +586,7 @@ flavorizr:
           navbarUnselected: "Color(0xFFA6A6A6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xff79B3C3)"
+          gloveboxMultidocsAccent: "Color(0xff79B3C3)"
 
       android:
         applicationId: "com.ikontechnologies.grubbsfamily.connect"
@@ -576,6 +605,7 @@ flavorizr:
           navbarUnselected: "Color(0xFFA6A6A6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xffC11A20)"
+          gloveboxMultidocsAccent: "Color(0xff6A6060)"
 
       android:
         applicationId: "com.ikontechnologies.toyotaofdenton.connect"
@@ -594,6 +624,7 @@ flavorizr:
           navbarUnselected: "Color(0xffa6a6a6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xffE3A52C)"
+          gloveboxMultidocsAccent: "Color(0xffE3A52C)"
 
       android:
         applicationId: "com.ikontechnologies.khourygroup.connect"
@@ -612,6 +643,7 @@ flavorizr:
           navbarUnselected: "Color(0xffa6a6a6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xff8A9DBF)"
+          gloveboxMultidocsAccent: "Color(0xff8A9DBF)"
 
       android:
         applicationId: "com.ikontechnologies.stingraychevy.connect"
@@ -630,6 +662,7 @@ flavorizr:
           navbarUnselected: "Color(0xffa6a6a6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xff84A3B0)"
+          gloveboxMultidocsAccent: "Color(0xff84A3B0)"
 
       android:
         applicationId: "com.ikontechnologies.sawgrassinfiniti.connect"
@@ -648,6 +681,7 @@ flavorizr:
           navbarUnselected: "Color(0xffa6a6a6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xff798897)"
+          gloveboxMultidocsAccent: "Color(0xff798897)"
 
       android:
         applicationId: "com.ikontechnologies.toyotacoolsprings.connect"
@@ -666,6 +700,7 @@ flavorizr:
           navbarUnselected: "Color(0xffa6a6a6)"
           navbarBackground: "Color(0xffffffff)"
           tabsBackground: "Color(0xffEB2334)"
+          gloveboxMultidocsAccent: "Color(0xff292323)"
 
       android:
         applicationId: "com.ikontechnologies.toyotaofmurfreesboro.connect"
@@ -673,6 +708,44 @@ flavorizr:
       ios:
         bundleId: "com.ikontechnologies.toyotaofmurfreesboro.connect"
         appId: "1611084107"
+
+    ford_murfreesboro:
+      app:
+        name: "Ford of Murfreesboro Connect"
+        theme:
+          primary: "Color(0xffF58125)"
+          secondary: "Color(0xff003399)"
+          navbarSelected: "Color(0xffF58125)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xff003399)"
+          gloveboxMultidocsAccent: "Color(0xffF58125)"
+
+      android:
+        applicationId: "com.ikontechnologies.fordofmurfreesboro.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.fordofmurfreesboro.connect"
+        appId: "1611053379"
+
+    bayside_mitsubishi:
+      app:
+        name: "Ford of Murfreesboro Connect"
+        theme:
+          primary: "Color(0xff4C5056)"
+          secondary: "Color(0xffE50019)"
+          navbarSelected: "Color(0xffE50019)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xffE50019)"
+          gloveboxMultidocsAccent: "Color(0xff4C5056)"
+
+      android:
+        applicationId: "com.ikontechnologies.baysidemitsubishi.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.baysidemitsubishi.connect"
+        appId: "1609982264"
 
     i95_nissan:
       app:
@@ -791,6 +864,7 @@ flavorizr:
           navbarSelected: "Color(0xff0081C4)"
           navbarBackground: "Color(0xffF1F3F4)"
           tabsBackground: "Color(0xff83C5BE)"
+          gloveboxMultidocsAccent: "Color(0xff83C5BE)"
 
       android:
         applicationId: "com.ikontechnologies.robertourismanjr.connect"

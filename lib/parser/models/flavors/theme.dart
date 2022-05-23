@@ -87,6 +87,9 @@ class Theme {
   @JsonKey(disallowNullValue: true)
   final String? tabsBackground;
 
+  @JsonKey(disallowNullValue: true)
+  final String? gloveboxMultidocsAccent;
+
 
   Theme({
     this.primary,
@@ -108,6 +111,7 @@ class Theme {
     this.navbarUnselected,
     this.navbarBackground,
     this.tabsBackground,
+    this.gloveboxMultidocsAccent
   });
 
   factory Theme.fromJson(Map<String, dynamic> json) => _$ThemeFromJson(json);

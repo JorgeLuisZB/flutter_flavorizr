@@ -79,6 +79,7 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
     buffer.writeln('  static Color unselectedCarText = Color(0xff606260);');
     buffer.writeln('  static Color gloveBoxPDFColor = Color(0xffFF4B55);');
     buffer.writeln('  static Color gloveBoxPictureColor = Color(0xff2354D1);');
+    buffer.writeln('  static Color gloveboxMultidocsAccent = Color(0xff239DD1);');
     buffer.writeln();
   }
 
@@ -134,6 +135,9 @@ class FlutterFlavorThemeProcessor extends StringProcessor {
           : null;
       flavor.app.theme?.tabsBackground != null
           ? buffer.writeln('      tabsBackground = ${flavor.app.theme?.tabsBackground};')
+          : null;
+      flavor.app.theme?.gloveboxMultidocsAccent != null
+          ? buffer.writeln('      gloveboxMultidocsAccent = ${flavor.app.theme?.gloveboxMultidocsAccent};')
           : null;
 
       buffer.writeln('      return ThemeData.from(colorScheme: colorScheme${name.pascalCase});');
