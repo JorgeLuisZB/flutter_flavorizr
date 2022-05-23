@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "310440041235",
+    "project_id": "ikon-connect-wl-003",
+    "storage_bucket": "ikon-connect-wl-003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310440041235:android:6b68be2df45a9bffac98e6",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.bentonnissancolumbia.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310440041235-son8tp5vm90hk5rh6fk41o2et0t9uc27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.bentonnissancolumbia.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "310440041235-oekqqc92uhjvckph273ck1cngovmhn42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt-YsJ2Kx3T4RAG2EA4mljvhsXMrs1COc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310440041235-oekqqc92uhjvckph273ck1cngovmhn42.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "310440041235-1o6vp9l45jssfcvlab0mnial96s1lk16.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.koolchevrolet.connect",
+                "app_store_id": "1612283893"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310440041235:android:6401833d6dc58cc2ac98e6",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.koolchevrolet.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310440041235-oekqqc92uhjvckph273ck1cngovmhn42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt-YsJ2Kx3T4RAG2EA4mljvhsXMrs1COc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310440041235-oekqqc92uhjvckph273ck1cngovmhn42.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "310440041235-1o6vp9l45jssfcvlab0mnial96s1lk16.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.koolchevrolet.connect",
+                "app_store_id": "1612283893"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

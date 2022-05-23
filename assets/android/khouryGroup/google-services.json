@@ -1,0 +1,235 @@
+{
+  "project_info": {
+    "project_number": "854210585980",
+    "project_id": "ikon-connec-wl002",
+    "storage_bucket": "ikon-connec-wl002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854210585980:android:adb86699c9bbf6edf430f9",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.byersauto.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854210585980-iukbj6vml30a469hl074gnfrma62sftb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.byersauto.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGNZ9na7TgM6-1vAvRSduTnd41la1D1Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854210585980-0q1up7391adfrlv68lgufpn3mtaeibv5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.toyotaofdenton.connect",
+                "app_store_id": "1606001588"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854210585980:android:35ec6fc9ec76ababf430f9",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.grubbsfamily.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854210585980-mje3j2tros1s0djtd9vfuj4erjnhmidm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.grubbsfamily.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGNZ9na7TgM6-1vAvRSduTnd41la1D1Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854210585980-0q1up7391adfrlv68lgufpn3mtaeibv5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.toyotaofdenton.connect",
+                "app_store_id": "1606001588"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854210585980:android:482bd8f3584ac845f430f9",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.khourygroup.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854210585980-m971eobhrp1knv3siajuda4i3tio8iqt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.khourygroup.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGNZ9na7TgM6-1vAvRSduTnd41la1D1Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854210585980-0q1up7391adfrlv68lgufpn3mtaeibv5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.toyotaofdenton.connect",
+                "app_store_id": "1606001588"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854210585980:android:f3d07ae612b2c15df430f9",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.naplesnissan.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854210585980-h4igq0et31gr86a5pk3170j3fif18usl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.naplesnissan.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGNZ9na7TgM6-1vAvRSduTnd41la1D1Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854210585980-0q1up7391adfrlv68lgufpn3mtaeibv5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.toyotaofdenton.connect",
+                "app_store_id": "1606001588"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854210585980:android:ec8aa3ff543e106af430f9",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.toyotaofdenton.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854210585980-lcqf05dmuqvec89cnse58rp6pg15e68h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.toyotaofdenton.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGNZ9na7TgM6-1vAvRSduTnd41la1D1Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854210585980-dublr399k908hkbph7h9lm4netvt3uo6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "854210585980-0q1up7391adfrlv68lgufpn3mtaeibv5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.toyotaofdenton.connect",
+                "app_store_id": "1606001588"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

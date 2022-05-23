@@ -49,6 +49,7 @@ flavorizr:
         theme:
           primary: "Color(0xff5EBE4E)"
           secondary: "Color(0xffF1F3F4)"
+          onSecondary: "Color(0xff239DD1)"
 
       android:
         applicationId: "com.ikontechnologies.ikonconnect"
@@ -56,6 +57,75 @@ flavorizr:
       ios:
         bundleId: "com.skypatrol.consumer"
         appId: "1078370039"
+
+    classic:
+      app:
+        name: "Classic Chev Connect"
+        theme:
+          primary: "Color(0xff095A99)"
+          secondary: "Color(0xffF1F3F4)"
+          navbarSelected: "Color(0xff095A99)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff1B7ECA)"
+
+      android:
+        applicationId: "com.ikontechnologies.classic.connect"
+
+      ios:
+        bundleId: "com.skypatrol.classic"
+        appId: "1512514030"
+
+    crystal:
+      app:
+        name: "Crystal Connect"
+        theme:
+          primary: "Color(0xff1D4694)"
+          secondary: "Color(0xffF1F3F4)"
+          navbarSelected: "Color(0xff1B7ECA)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff1B7ECA)"
+
+      android:
+        applicationId: "com.ikontechnologies.crystal.connect"
+
+      ios:
+        bundleId: "com.skypatrol.crystal"
+        appId: "1512261642"
+
+    stanley:
+      app:
+        name: "Stanley Connect"
+        theme:
+          primary: "Color(0xff1D5184)"
+          secondary: "Color(0xffF1F3F4)"
+          navbarSelected: "Color(0xff1D5184)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff2C8F88)"
+
+      android:
+        applicationId: "com.ikontechnologies.stanley.connect"
+
+      ios:
+        bundleId: "com.skypatrol.stanley"
+        appId: "1512252609"
+
+    southern:
+      app:
+        name: "Southern 441 Connect"
+        theme:
+          primary: "Color(0xffD82027)"
+          secondary: "Color(0xffF1F3F4)"
+          navbarSelected: "Color(0xffD82027)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          navbarBackground: "Color(0xff16191D)"
+          tabsBackground: "Color(0XFF596B73)"
+
+      android:
+        applicationId: "com.ikontechnologies.southern441.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.southern441.connect"
+        appId: "1575419971"
 
     grand_auto:
       app:
@@ -67,14 +137,544 @@ flavorizr:
           navbarBackground: "Color(0xff16191D)"
           navbarUnselected: "secondaryGrey.withOpacity(0.6)"
           tabsBackground: "Color(0xffD82027)"
+
       android:
         applicationId: "com.ikontechnologies.grandauto.connect"
-
       ios:
         bundleId: "com.ikontechnologies.grandauto.connect"
         appId: "1584707262"
 
-    i95_nissan_connect:
+    platinum:
+      app:
+        name: "Platinum Connect"
+        theme:
+          primary: "Color(0xff184274)"
+          secondary: "Color(0xff0D2440)"
+          primaryContainer: "Color(0xffD8A31A)"
+          navbarSelected: "Color(0xffD8A31A)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xffD8A31A)"
+
+      android:
+        applicationId: "com.ikontechnologies.platinum.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.platinum.connect"
+        appId: "1585014184"
+
+    pegasus:
+      app:
+        name: "Pegasus Connect"
+        theme:
+          primary: "Color(0xffD32026)"
+          secondary: "Color(0xff239DD1)"
+          navbarSelected: "Color(0xff239DD1)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff239DD1)"
+
+      android:
+        applicationId: "com.ikontechnologies.pegasus.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.pegasus.connect"
+        appId: "1585031312"
+
+    parkway:
+      app:
+        name: "Parkway Connect"
+        theme:
+          primary: "Color(0xff617295)"
+          secondary: "Color(0xff66B6D9)"
+          navbarSelected: "Color(0xff617295)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff66B6D9)"
+
+      android:
+        applicationId: "com.ikontechnologies.parkway.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.parkway.connect"
+        appId: "1585031808"
+
+    south_west:
+      app:
+        name: "South West Connect"
+        theme:
+          primary: "Color(0xff01509C)"
+          secondary: "Color(0xffF1F3F4)"
+          navbarSelected: "Color(0xff01509C)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff66B6D9)"
+
+      android:
+        applicationId: "com.ikontechnologies.southwest.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.southwest.connect"
+        appId: "1585031133"
+
+    triple_crown:
+      app:
+        name: "Triple Crown Connect"
+        theme:
+          primary: "Color(0xff29292B)"
+          secondary: "Color(0xffDD9B37)"
+          navbarSelected: "Color(0xffDD9B37)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          navbarBackground: "Color(0xff16191D)"
+          tabsBackground: "Color(0xffDD9B37)"
+
+      android:
+        applicationId: "com.ikontechnologies.triplecrown.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.triplecrown.connect"
+        appId: "1585031956"
+
+    ourisman:
+      app:
+        name: "Ourisman Connect"
+        theme:
+          primary: "Color(0xff0081C4)"
+          secondary: "Color(0xff83C5BE)"
+          navbarSelected: "Color(0xff0081C4)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff83C5BE)"
+
+      android:
+        applicationId: "com.ikontechnologies.ourisman.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.ourisman.connect"
+        appId: "1585714018"
+
+    silsbee:
+      app:
+        name: "Silsbee Connect"
+        theme:
+          primary: "Color(0xff1A3E6E)"
+          secondary: "Color(0xff94E8B4)"
+          selectedCarText: "Color(0xff1A3E6E)"
+          unselectedCarText: "Color(0xff1A3E6E)"
+          navbarSelected: "Color(0xff94E8B4)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff94E8B4)"
+
+      android:
+        applicationId: "com.ikontechnologies.silsbee.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.silsbee.connect"
+        appId: "1585715323"
+
+    irwin:
+      app:
+        name: "Irwin Auto Co. Connect"
+        theme:
+          primary: "Color(0xff1A3E6E)"
+          secondary: "Color(0xff93BEFF)"
+          selectedCarText: "Color(0xff1A3E6E)"
+          unselectedCarText: "Color(0xff1A3E6E)"
+          navbarSelected: "Color(0xff93BEFF)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          navbarBackground: "Color(0xff1A3E6E)"
+          tabsBackground: "Color(0xff93BEFF)"
+
+      android:
+        applicationId: "com.ikontechnologies.irwin.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.irwin.connect"
+        appId: "1592726118"
+
+    city_kia:
+      app:
+        name: "City Kia of Orlando Connect"
+        theme:
+          primary: "Color(0xff50708E)"
+          secondary: "Color(0xffE49D22)"
+          selectedCarText: "Color(0xffFFFFFF)"
+          unselectedCarText: "Color(0xff50708E)"
+          navbarSelected: "Color(0xffE49D22)"
+          navbarBackground: "Color(0xff50708E)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xffE49D22)"
+
+      android:
+        applicationId: "com.ikontechnologies.citykia.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.citykia.connect"
+        appId: "1594415922"
+
+    vanguard_kia:
+      app:
+        name: "Vanguard Kia Connect"
+        theme:
+          primary: "Color(0xff384769)"
+          secondary: "Color(0xff2C8C87)"
+          selectedCarText: "Color(0xffFFFFFF)"
+          unselectedCarText: "Color(0xff384769)"
+          navbarSelected: "Color(0xffFFFFFF)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          navbarBackground: "Color(0xff384769)"
+          tabsBackground: "Color(0xff2C8C87)"
+
+      android:
+        applicationId: "com.ikontechnologies.vanguardkia.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.vanguardkia.connect"
+        appId: "1594727134"
+
+    benton_auto:
+      app:
+        name: "Benton Auto Group Connect"
+        theme:
+          primary: "Color(0xff2D2628)"
+          secondary: "Color(0xffD32026)"
+          selectedCarText: "Color(0xffFFFFFF)"
+          unselectedCarText: "Color(0xff2D2628)"
+          navbarSelected: "Color(0xffFFFFFF)"
+          navbarBackground: "Color(0xff2D2628)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xffD32026)"
+
+      android:
+        applicationId: "com.ikontechnologies.bentonauto.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.bentonauto.connect"
+        appId: "1595212630"
+
+    tallassee:
+      app:
+        name: "Tallassee Automotive Connect"
+        theme:
+          primary: "Color(0xff2A3038)"
+          secondary: "Color(0xff6C809A)"
+          selectedCarText: "Color(0xffFFFFFF)"
+          unselectedCarText: "Color(0xff2A3038)"
+          navbarSelected: "Color(0xffFFFFFF)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          navbarBackground: "Color(0xff2A3038)"
+          tabsBackground: "Color(0xff6C809A)"
+
+      android:
+        applicationId: "com.ikontechnologies.tallassee.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.tallassee.connect"
+        appId: "1596147523"
+
+    umansky:
+      app:
+        name: "Umansky Connect"
+        theme:
+          primary: "Color(0xff0A5199)"
+          secondary: "Color(0xff01A1DD)"
+          navbarSelected: "Color(0xff01A1DD)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff0A5199)"
+
+      android:
+        applicationId: "com.ikontechnologies.umansky.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.umansky.connect"
+        appId: "1596146060"
+
+    jack_ingram:
+      app:
+        name: "Jack Ingram Nissan Connect"
+        theme:
+          primary: "Color(0xff6C809A)"
+          secondary: "Color(0xffC2272F)"
+          navbarSelected: "Color(0xffC2272F)"
+          navbarUnselected: "Color(0xff6C809A)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xffC2272F)"
+
+      android:
+        applicationId: "com.ikontechnologies.jackingram.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.jackingram.connect"
+        appId: "1596160374"
+
+    vanguard_gmc:
+      app:
+        name: "Vanguard GMC/Buick Connect"
+        theme:
+          primary: "Color(0xff384769)"
+          secondary: "Color(0xff2C8C87)"
+          selectedCarText: "Color(0xffFFFFFF)"
+          unselectedCarText: "Color(0xff384769)"
+          navbarSelected: "Color(0xffFFFFFF)"
+          navbarUnselected: "Color(0xffF1F3F4)"
+          navbarBackground: "Color(0xff384769)"
+          tabsBackground: "Color(0xff2C8C87)"
+
+      android:
+        applicationId: "com.ikontechnologies.vanguardgmc.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.vanguardgmc.connect"
+        appId: "1597989435"
+
+    ourisman_hyundai:
+      app:
+        name: "Ourisman Hyundai of Bowie Connect"
+        theme:
+          primary: "Color(0xff0081C4)"
+          secondary: "Color(0xff83C5BE)"
+          navbarSelected: "Color(0xff0081C4)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff83C5BE)"
+
+      android:
+        applicationId: "com.ikontechnologies.ourismanhyundai.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.ourismanhyundai.connect"
+        appId: "1598214032"
+
+    benton_nissan:
+      app:
+        name: "Benton Nissan Connect"
+        theme:
+          primary: "Color(0xff2D2628)"
+          secondary: "Color(0xffD32026)"
+          navbarSelected: "Color(0xFFF1F3F4)"
+          navbarBackground: "Color(0xff2D2628)"
+          navbarUnselected: "Color(0xFFF1F3F4)"
+          tabsBackground: "Color(0xffD32026)"
+
+      android:
+        applicationId: "com.ikontechnologies.bentonnissan.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.bentonnissan.connect"
+        appId: "1599363435"
+
+    koeppel_kares:
+      app:
+        name: "Koeppel Kares Connect"
+        theme:
+          primary: "Color(0xffB11F24)"
+          secondary: "Color(0xff2F4858)"
+          navbarSelected: "Color(0xffB11F24)"
+          navbarUnselected: "Color(0xFF606260)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xff2F4858)"
+
+      android:
+        applicationId: "com.ikontechnologies.koeppel.connect"
+
+      ios:
+        bundleId: "com.skypatrol.koeppel"
+        appId: "1563478481"
+
+    jenkins_auto_group:
+      app:
+        name: "Jenkins Auto Group Connect"
+        theme:
+          primary: "Color(0xff00508F)"
+          secondary: "Color(0xff334B49)"
+          navbarSelected: "Color(0xff00508F)"
+          navbarUnselected: "Color(0xFF606260)"
+          navbarBackground: "Color(0xffffffff)"
+
+      android:
+        applicationId: "com.ikontechnologies.jenkinsautogroup.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.jenkinsautogroup.connect"
+        appId: "1601503416"
+
+    vanguard_ford:
+      app:
+        name: "Vanguard Ford Connect"
+        theme:
+          primary: "Color(0xff384769)"
+          secondary: "Color(0xff2C8C87)"
+          selectedCarText: "Color(0xffFFFFFF)"
+          unselectedCarText: "Color(0xff384769)"
+          navbarSelected: "Color(0xff384769)"
+          navbarUnselected: "Color(0xffA6A6A6)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff2C8C87)"
+
+      android:
+        applicationId: "com.ikontechnologies.vanguardford.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.vanguardford.connect"
+        appId: "1601503401"
+
+    byers_auto:
+      app:
+        name: "Byers Auto Connect"
+        theme:
+          primary: "Color(0xff1689BB)"
+          secondary: "Color(0xffBEA6A1)"
+          navbarSelected: "Color(0xff1689BB)"
+          navbarUnselected: "Color(0xFFA6A6A6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xffBEA6A1)"
+
+      android:
+        applicationId: "com.ikontechnologies.byersauto.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.byersauto.connect"
+        appId: "1601874014"
+
+    naples_nissan:
+      app:
+        name: "Naples Nissan Connect"
+        theme:
+          primary: "Color(0xff231F20)"
+          secondary: "Color(0xffC52035)"
+          navbarSelected: "Color(0xffC52035)"
+          navbarUnselected: "Color(0xFFA6A6A6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xffC52035)"
+
+      android:
+        applicationId: "com.ikontechnologies.naplesnissan.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.naplesnissan.connect"
+        appId: "1602537522"
+
+    grubbs_family:
+      app:
+        name: "Grubbs Family Connect"
+        theme:
+          primary: "Color(0xff27505C)"
+          secondary: "Color(0xff79B3C3)"
+          navbarSelected: "Color(0xff27505C)"
+          navbarUnselected: "Color(0xFFA6A6A6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xff79B3C3)"
+
+      android:
+        applicationId: "com.ikontechnologies.grubbsfamily.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.grubbsfamily.connect"
+        appId: "1604890215"
+
+    toyota_denton:
+      app:
+        name: "Toyota of Denton Connect"
+        theme:
+          primary: "Color(0xff6A6060)"
+          secondary: "Color(0xffC11A20)"
+          navbarSelected: "Color(0xffC11A20)"
+          navbarUnselected: "Color(0xFFA6A6A6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xffC11A20)"
+
+      android:
+        applicationId: "com.ikontechnologies.toyotaofdenton.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.toyotaofdenton.connect"
+        appId: "1606001588"
+
+    khoury_group:
+      app:
+        name: "The Khoury Group Connect"
+        theme:
+          primary: "Color(0xff52524F)"
+          secondary: "Color(0xffE3A52C)"
+          navbarSelected: "Color(0xffE3A52C)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xffE3A52C)"
+
+      android:
+        applicationId: "com.ikontechnologies.khourygroup.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.khourygroup.connect"
+        appId: "1607373490"
+
+    stingray_chevy:
+      app:
+        name: "Stingray Chevy Connect"
+        theme:
+          primary: "Color(0xff010391)"
+          secondary: "Color(0xff8A9DBF)"
+          navbarSelected: "Color(0xff010391)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xff8A9DBF)"
+
+      android:
+        applicationId: "com.ikontechnologies.stingraychevy.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.stingraychevy.connect"
+        appId: "1607918403"
+
+    sawgrass_infiniti:
+      app:
+        name: "Sawgrass INFINITI Connect"
+        theme:
+          primary: "Color(0xff1B292F)"
+          secondary: "Color(0xff84A3B0)"
+          navbarSelected: "Color(0xff606260)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xff84A3B0)"
+
+      android:
+        applicationId: "com.ikontechnologies.sawgrassinfiniti.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.sawgrassinfiniti.connect"
+        appId: "1608406863"
+
+    toyota_cool_springs:
+      app:
+        name: "Toyota Cool Springs Connect"
+        theme:
+          primary: "Color(0xffEB2030)"
+          secondary: "Color(0xff798897)"
+          navbarSelected: "Color(0xffEB2030)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xff798897)"
+
+      android:
+        applicationId: "com.ikontechnologies.toyotacoolsprings.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.toyotacoolsprings.connect"
+        appId: "1608224895"
+
+    toyota_murfreesboro:
+      app:
+        name: "Toyota of Murfreesboro Connect"
+        theme:
+          primary: "Color(0xff292323)"
+          secondary: "Color(0xffEB2334)"
+          navbarSelected: "Color(0xff292323)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffffffff)"
+          tabsBackground: "Color(0xffEB2334)"
+
+      android:
+        applicationId: "com.ikontechnologies.toyotaofmurfreesboro.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.toyotaofmurfreesboro.connect"
+        appId: "1611084107"
+
+    i95_nissan:
       app:
         name: "I-95 Nissan Connect"
         theme:
@@ -92,7 +692,7 @@ flavorizr:
         bundleId: "com.ikontechnologies.i95nissan.connect"
         appId: "1612290205"
 
-    north_ft_lauderdale_subaru_connect:
+    north_ft_lauderdale_subaru:
       app:
         name: "North Ft. Lauderdale Subaru Connect"
         theme:
@@ -110,7 +710,7 @@ flavorizr:
         bundleId: "com.ikontechnologies.northftlauderdalesubaru.connect"
         appId: "1612294980"
 
-    kool_chevrolet_connect:
+    kool_chevrolet:
       app:
         name: "Kool Chevrolet Connect"
         theme:
@@ -128,7 +728,164 @@ flavorizr:
         bundleId: "com.ikontechnologies.koolchevrolet.connect"
         appId: "1612283893"
 
+    spur:
+      app:
+        name: "Spur Connect"
+        theme:
+          primary: "Color(0xff141414)"
+          secondary: "Color(0xff099e65)"
+          navbarSelected: "Color(0xff099e65)"
+          navbarUnselected: "Color(0xff141414)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff099e65)"
 
+      android:
+        applicationId: "com.ikontechnologies.spur.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.spur.connect"
+        appId: "1612524610"
+
+    benton_nissan_columbia:
+      app:
+        name: "Benton Nissan Columbia"
+        theme:
+          primary: "Color(0xff999999)"
+          secondary: "Color(0xffC3002F)"
+          navbarSelected: "Color(0xff999999F)"
+          navbarUnselected: "Color(0xffC3002F)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff999999F)"
+
+      android:
+        applicationId: "com.ikontechnologies.bentonnissancolumbia.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.bentonnissancolumbia.connect"
+        appId: "1614516023"
+
+    walts_live_oak:
+      app:
+        name: "Walts Live Oak"
+        theme:
+          primary: "Color(0xff6C757D)"
+          secondary: "Color(0xff020F54)"
+          navbarSelected: "Color(0xff020F54)"
+          navbarUnselected: "Color(0xffa6a6a6)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff020F54)"
+
+      android:
+        applicationId: "com.ikontechnologies.waltsliveoak.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.waltsliveoak.connect"
+        appId: "1617150697"
+
+    robert_ourisman_jr:
+      app:
+        name: "Robert Ourisman Jr."
+        theme:
+          primary: "Color(0xff0081C4)"
+          secondary: "Color(0xff83C5BE)"
+          navbarSelected: "Color(0xff0081C4)"
+          navbarBackground: "Color(0xffF1F3F4)"
+          tabsBackground: "Color(0xff83C5BE)"
+
+      android:
+        applicationId: "com.ikontechnologies.robertourismanjr.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.robertourismanjr.connect"
+        appId: "1618785339"
+
+    jacksonville_cdjr:
+      app:
+        name: "Jacksonville CDJR"
+        theme:
+          primary: "Color(0xffD20F06)"
+          secondary: "Color(0xffC31F1F)"
+          surface: "Color(0xffFFFFFF)"
+          onSecondary: "Color(0xffFFFFFF)"
+          brightness: "Brightness.dark"
+          navbarSelected: "Color(0xffD20F06)"
+          navbarUnselected: "Color(0xffA6A6A6)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xffC31F1F)"
+
+      android:
+        applicationId: "com.ikontechnologies.jacksonvillecdjr.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.jacksonvillecdjr.connect"
+        appId: "1620382108"
+
+    james_wood:
+      app:
+        name: "James Wood"
+        theme:
+          primary: "Color(0xff2A4BB5)"
+          secondary: "Color(0xff73789F)"
+          surface: "Color(0xffFFFFFF)"
+          onSecondary: "Color(0xffFFFFFF)"
+          brightness: "Brightness.dark"
+          navbarSelected: "Color(0xff606260)"
+          navbarUnselected: "Color(0xffA6A6A6)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff73789F)"
+
+      android:
+        applicationId: "com.ikontechnologies.jameswood.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.jameswood.connect"
+        appId: "1622438062"
+
+    benton_nissan_bessemer:
+      app:
+        name: "Benton Nissan Bessemer"
+        theme:
+          primary: "Color(0xffC3002F)"
+          secondary: "Color(0xff999999F)"
+          primaryVariant: "Color(0xff999999)"
+          onPrimary: "Color(0xff999999)"
+          surface: "Color(0xffFFFFFF)"
+          onSecondary: "Color(0xffFFFFFF)"
+          brightness: "Brightness.dark"
+          navbarSelected: "Color(0xffC3002F)"
+          navbarUnselected: "Color(0xffA6A6A6)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff999999F)"
+
+      android:
+        applicationId: "com.ikontechnologies.bentonnissanbessemer.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.bentonnissanbessemer.connect"
+        appId: "1624518517"
+
+    benton_nissan_hoover:
+      app:
+        name: "Benton Nissan Hoover"
+        theme:
+          primary: "Color(0xffC3002F)"
+          secondary: "Color(0xff999999F)"
+          primaryVariant: "Color(0xff999999)"
+          onPrimary: "Color(0xff999999)"
+          surface: "Color(0xffFFFFFF)"
+          onSecondary: "Color(0xffFFFFFF)"
+          brightness: "Brightness.dark"
+          navbarSelected: "Color(0xffC3002F)"
+          navbarUnselected: "Color(0xffA6A6A6)"
+          navbarBackground: "Color(0xffFFFFFF)"
+          tabsBackground: "Color(0xff999999F)"
+
+      android:
+        applicationId: "com.ikontechnologies.bentonnissanhoover.connect"
+
+      ios:
+        bundleId: "com.ikontechnologies.bentonnissanhoover.connect"
+        appId: "1624518592"
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

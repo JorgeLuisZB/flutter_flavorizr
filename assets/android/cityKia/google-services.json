@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "119217861998",
+    "project_id": "ikon-connect-wl001",
+    "storage_bucket": "ikon-connect-wl001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119217861998:android:76e37606a19b955edbbd7f",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.citykia.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119217861998-shhr59du4crv25p2s1bk769a66b8ftr4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.citykia.connect",
+            "certificate_hash": "d7d617c19e7d9fe2a24df0958a10397845ef2b3d"
+          }
+        },
+        {
+          "client_id": "119217861998-duhsrhodvke0oha51asmsjb6jataqsrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCegPpr4v82WG6TzfKwgfCAnCn0imW27PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119217861998-duhsrhodvke0oha51asmsjb6jataqsrf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119217861998-dot5ikklo6s77ntosdkl182aldvnmrmv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.irwin.connect"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119217861998:android:a23f16cf1ed2f749dbbd7f",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.irwin.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119217861998-qkcg3cm41cj4a2onqehmoaddl6oaqg2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ikontechnologies.irwin.connect",
+            "certificate_hash": "2dc39963d95eada9b3468ba19c931ea993488c1d"
+          }
+        },
+        {
+          "client_id": "119217861998-duhsrhodvke0oha51asmsjb6jataqsrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCegPpr4v82WG6TzfKwgfCAnCn0imW27PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119217861998-duhsrhodvke0oha51asmsjb6jataqsrf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119217861998-dot5ikklo6s77ntosdkl182aldvnmrmv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.irwin.connect"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119217861998:android:0f18e15477502d0bdbbd7f",
+        "android_client_info": {
+          "package_name": "com.ikontechnologies.silsbee.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119217861998-duhsrhodvke0oha51asmsjb6jataqsrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCegPpr4v82WG6TzfKwgfCAnCn0imW27PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119217861998-duhsrhodvke0oha51asmsjb6jataqsrf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "119217861998-dot5ikklo6s77ntosdkl182aldvnmrmv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ikontechnologies.irwin.connect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
